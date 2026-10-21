@@ -1,0 +1,92 @@
+{
+ "viewer_id": "U-00660",
+ "arm": "holdout",
+ "facts": {
+  "dialect": {
+   "value": "d4",
+   "source": "app_setting",
+   "as_of": "2026-10-01T17:38:27.353Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting",
+   "as_of": "2026-10-01T17:38:27.353Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 41.6
+  },
+  "push_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 41.6
+  },
+  "whatsapp_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 41.6
+  },
+  "signup_at": {
+   "value": "2024-12-16T23:52:01.594Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 41.6
+  }
+ },
+ "conflicts": [],
+ "goal": {
+  "id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T17:38:27.353Z",
+  "deadline": "2026-10-04T17:38:27.353Z",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "rule_version": "v1",
+  "context": {
+   "series_slug": "bagi-baya-d4"
+  },
+  "status": "open",
+  "shadow": true,
+  "evidence": [
+   "event:0c9efca8-6800-4954-995a-b6aa960275a0",
+   "episodes:bagi-baya-d4"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-0489",
+  "D-2683"
+ ],
+ "actions": [],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-00660",
+   "arm": "holdout",
+   "goal_id": "G07",
+   "started_at": "2026-10-01T17:38:27.353Z",
+   "deadline": "2026-10-04T17:38:27.353Z",
+   "rule_version": "v1",
+   "shadow": true,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "failed",
+   "reason": "no play_started inside the window",
+   "signal_event_id": null,
+   "signal_at": null,
+   "exposed_to_agent": false
+  }
+ ],
+ "learned": [
+  "goal G07 failed (no exposure to learn from)"
+ ]
+}

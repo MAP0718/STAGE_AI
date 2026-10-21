@@ -1,0 +1,92 @@
+{
+ "viewer_id": "U-03752",
+ "arm": "holdout",
+ "facts": {
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "as_of": "2026-10-01T09:21:50.515Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting",
+   "as_of": "2026-10-01T09:21:50.515Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 33.4
+  },
+  "push_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 33.4
+  },
+  "whatsapp_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 33.4
+  },
+  "signup_at": {
+   "value": "2026-07-23T22:03:25.953Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 33.4
+  }
+ },
+ "conflicts": [
+  "profile_dialect:d2"
+ ],
+ "goal": {
+  "id": "G12",
+  "name": "return_after_absence_7d",
+  "started_at": "2026-10-01T09:21:50.515Z",
+  "deadline": "2026-10-08T09:21:50.515Z",
+  "success": {
+   "event": "play_started",
+   "condition": "any title",
+   "window_hours": 168
+  },
+  "rule_version": "v1",
+  "context": {},
+  "status": "open",
+  "shadow": true,
+  "evidence": [
+   "last app_open:13554800-af50-4d81-b28e-da0f74a915e6",
+   "no app_open in the 14 days before the trigger"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-1175",
+  "D-1176"
+ ],
+ "actions": [],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-03752",
+   "arm": "holdout",
+   "goal_id": "G12",
+   "started_at": "2026-10-01T09:21:50.515Z",
+   "deadline": "2026-10-08T09:21:50.515Z",
+   "rule_version": "v1",
+   "shadow": true,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "failed",
+   "reason": "no play_started inside the window",
+   "signal_event_id": null,
+   "signal_at": null,
+   "exposed_to_agent": false
+  }
+ ],
+ "learned": [
+  "goal G12 failed (no exposure to learn from)"
+ ]
+}

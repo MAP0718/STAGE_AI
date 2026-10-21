@@ -1,0 +1,91 @@
+{
+ "viewer_id": "U-00946",
+ "arm": "holdout",
+ "facts": {
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "as_of": "2026-10-01T15:16:13.991Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting",
+   "as_of": "2026-10-01T15:16:13.991Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 39.3
+  },
+  "push_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 39.3
+  },
+  "whatsapp_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 39.3
+  },
+  "signup_at": {
+   "value": "2025-07-24T08:39:12.154Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 39.3
+  }
+ },
+ "conflicts": [],
+ "goal": {
+  "id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T15:16:13.991Z",
+  "deadline": "2026-10-04T15:16:13.991Z",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "rule_version": "v1",
+  "context": {
+   "series_slug": "hama-chudibha-d1"
+  },
+  "status": "open",
+  "shadow": true,
+  "evidence": [
+   "event:e15f50b7-23e8-445f-827e-6b38e4bd5e6e",
+   "episodes:hama-chudibha-d1"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-2213"
+ ],
+ "actions": [],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-00946",
+   "arm": "holdout",
+   "goal_id": "G07",
+   "started_at": "2026-10-01T15:16:13.991Z",
+   "deadline": "2026-10-04T15:16:13.991Z",
+   "rule_version": "v1",
+   "shadow": true,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "succeeded",
+   "reason": "play_started seen inside the window",
+   "signal_event_id": "oua-006417",
+   "signal_at": "2026-10-02T13:42:18.000Z",
+   "exposed_to_agent": false
+  }
+ ],
+ "learned": [
+  "goal G07 succeeded"
+ ]
+}

@@ -1,0 +1,98 @@
+{
+ "viewer_id": "U-03645",
+ "arm": "agent",
+ "facts": {
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "as_of": "2026-10-01T09:45:21.965Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "en",
+   "source": "app_setting",
+   "as_of": "2026-10-01T09:45:21.965Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "lapsed",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 33.8
+  },
+  "push_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 33.8
+  },
+  "whatsapp_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 33.8
+  },
+  "signup_at": {
+   "value": "2026-08-16T03:14:23.933Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 33.8
+  }
+ },
+ "conflicts": [
+  "profile_dialect:d4"
+ ],
+ "goal": {
+  "id": "G06",
+  "name": "reactivate_lapsed_14d",
+  "started_at": "2026-10-01T06:16:02.994Z",
+  "deadline": "2026-10-15T06:16:02.994Z",
+  "success": {
+   "event": "purchase_completed",
+   "condition": "any paid plan",
+   "window_hours": 336
+  },
+  "rule_version": "v1",
+  "context": {},
+  "status": "open",
+  "shadow": false,
+  "evidence": [
+   "subscription:profile"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-0774",
+  "D-1228",
+  "D-2598"
+ ],
+ "actions": [
+  "A-0306",
+  "A-0307",
+  "A-0359",
+  "A-0564"
+ ],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-03645",
+   "arm": "agent",
+   "goal_id": "G06",
+   "started_at": "2026-10-01T06:16:02.994Z",
+   "deadline": "2026-10-15T06:16:02.994Z",
+   "rule_version": "v1",
+   "shadow": false,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "failed",
+   "reason": "no purchase_completed inside the window",
+   "signal_event_id": null,
+   "signal_at": null,
+   "exposed_to_agent": true
+  }
+ ],
+ "learned": [
+  "title T0001 was withdrawn at 2026-10-01T07:00:00.000Z; live home page republished without it",
+  "goal G06 failed even though a personalised page/message reached the viewer"
+ ]
+}

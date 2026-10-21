@@ -1,0 +1,132 @@
+{
+ "viewer_id": "U-03494",
+ "arm": "holdout",
+ "facts": {
+  "dialect": {
+   "value": "d4",
+   "source": "app_setting",
+   "as_of": "2026-10-01T16:46:02.272Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting",
+   "as_of": "2026-10-01T16:46:02.272Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "unknown",
+   "source": "profile+plan_ends_at",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 40.8
+  },
+  "push_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 40.8
+  },
+  "whatsapp_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 40.8
+  },
+  "signup_at": {
+   "value": "2025-02-11T21:09:39.457Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 40.8
+  }
+ },
+ "conflicts": [
+  "profile_dialect:d3"
+ ],
+ "goal": {
+  "id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T16:46:02.272Z",
+  "deadline": "2026-10-04T16:46:02.272Z",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "rule_version": "v1",
+  "context": {
+   "series_slug": "bagi-baya-d4"
+  },
+  "status": "open",
+  "shadow": true,
+  "evidence": [
+   "event:70e3d878-a993-4a53-92b5-daab6e37c854",
+   "episodes:bagi-baya-d4"
+  ]
+ },
+ "goal_history": [
+  {
+   "id": "G12",
+   "name": "return_after_absence_7d",
+   "started_at": "2026-10-01T06:48:01.573Z",
+   "deadline": "2026-10-08T06:48:01.573Z",
+   "success": {
+    "event": "play_started",
+    "condition": "any title",
+    "window_hours": 168
+   },
+   "rule_version": "v1",
+   "context": {},
+   "status": "no_longer_eligible",
+   "shadow": true,
+   "evidence": [
+    "last app_open:471a80fb-eadd-42d2-937d-6077e64339c7",
+    "no app_open in the 14 days before the trigger"
+   ]
+  }
+ ],
+ "decisions": [
+  "D-0835",
+  "D-2531"
+ ],
+ "actions": [],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-03494",
+   "arm": "holdout",
+   "goal_id": "G12",
+   "started_at": "2026-10-01T06:48:01.573Z",
+   "deadline": "2026-10-08T06:48:01.573Z",
+   "rule_version": "v1",
+   "shadow": true,
+   "primary": true,
+   "goal_status_at_replay_end": "no_longer_eligible",
+   "result": "succeeded",
+   "reason": "play_started seen inside the window",
+   "signal_event_id": "oua-022427",
+   "signal_at": "2026-10-01T06:52:58.573Z",
+   "exposed_to_agent": false
+  },
+  {
+   "viewer_id": "U-03494",
+   "arm": "holdout",
+   "goal_id": "G07",
+   "started_at": "2026-10-01T16:46:02.272Z",
+   "deadline": "2026-10-04T16:46:02.272Z",
+   "rule_version": "v1",
+   "shadow": true,
+   "primary": false,
+   "goal_status_at_replay_end": "open",
+   "result": "failed",
+   "reason": "no play_started inside the window",
+   "signal_event_id": null,
+   "signal_at": null,
+   "exposed_to_agent": false
+  }
+ ],
+ "learned": [
+  "goal G12 retired: no_longer_eligible",
+  "goal G12 succeeded",
+  "goal G07 failed (no exposure to learn from)"
+ ]
+}

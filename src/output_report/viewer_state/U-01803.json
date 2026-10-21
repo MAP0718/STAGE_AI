@@ -1,0 +1,93 @@
+{
+ "viewer_id": "U-01803",
+ "arm": "agent",
+ "facts": {
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "as_of": "2026-10-01T07:07:53.331Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting",
+   "as_of": "2026-10-01T07:07:53.331Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 31.1
+  },
+  "push_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 31.1
+  },
+  "whatsapp_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 31.1
+  },
+  "signup_at": {
+   "value": "2025-03-30T03:58:07.806Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 31.1
+  }
+ },
+ "conflicts": [],
+ "goal": {
+  "id": "G12",
+  "name": "return_after_absence_7d",
+  "started_at": "2026-10-01T07:07:53.331Z",
+  "deadline": "2026-10-08T07:07:53.331Z",
+  "success": {
+   "event": "play_started",
+   "condition": "any title",
+   "window_hours": 168
+  },
+  "rule_version": "v1",
+  "context": {},
+  "status": "open",
+  "shadow": false,
+  "evidence": [
+   "last app_open:d5afbba8-75a9-49b8-96a3-5740b3299e33",
+   "no app_open in the 14 days before the trigger"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-0869",
+  "D-0871",
+  "D-1076"
+ ],
+ "actions": [
+  "A-0371"
+ ],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-01803",
+   "arm": "agent",
+   "goal_id": "G12",
+   "started_at": "2026-10-01T07:07:53.331Z",
+   "deadline": "2026-10-08T07:07:53.331Z",
+   "rule_version": "v1",
+   "shadow": false,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "succeeded",
+   "reason": "play_started seen inside the window",
+   "signal_event_id": "oua-012293",
+   "signal_at": "2026-10-01T07:11:58.908Z",
+   "exposed_to_agent": true
+  }
+ ],
+ "learned": [
+  "goal G12 succeeded"
+ ]
+}

@@ -1,0 +1,15 @@
+{
+ "viewer_id": "U-03732",
+ "arm": "holdout",
+ "facts": {},
+ "conflicts": [],
+ "goal": null,
+ "goal_history": [],
+ "decisions": [
+  "D-0381"
+ ],
+ "actions": [],
+ "cancelled_actions": [],
+ "outcomes": [],
+ "learned": []
+}

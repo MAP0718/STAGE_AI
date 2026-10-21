@@ -1,0 +1,132 @@
+{
+ "viewer_id": "U-01948",
+ "arm": "agent",
+ "facts": {
+  "dialect": {
+   "value": "d4",
+   "source": "app_setting",
+   "as_of": "2026-10-01T17:49:35.390Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting",
+   "as_of": "2026-10-01T17:49:35.390Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 41.8
+  },
+  "push_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 41.8
+  },
+  "whatsapp_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 41.8
+  },
+  "signup_at": {
+   "value": "2026-04-10T23:29:49.914Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 41.8
+  }
+ },
+ "conflicts": [],
+ "goal": {
+  "id": "G02",
+  "name": "first_full_episode_3d",
+  "started_at": "2026-10-01T16:35:12.206Z",
+  "deadline": "2026-10-04T16:35:12.206Z",
+  "success": {
+   "event": "episode_completed",
+   "condition": "any episode",
+   "window_hours": 72
+  },
+  "rule_version": "v1",
+  "context": {},
+  "status": "open",
+  "shadow": false,
+  "evidence": [
+   "no episode_completed in the 30-day history"
+  ]
+ },
+ "goal_history": [
+  {
+   "id": "G12",
+   "name": "return_after_absence_7d",
+   "started_at": "2026-10-01T15:30:25.991Z",
+   "deadline": "2026-10-08T15:30:25.991Z",
+   "success": {
+    "event": "play_started",
+    "condition": "any title",
+    "window_hours": 168
+   },
+   "rule_version": "v1",
+   "context": {},
+   "status": "no_longer_eligible",
+   "shadow": false,
+   "evidence": [
+    "last app_open:9a3df5bd-10ef-4428-9cea-8f67f08ddf2d",
+    "no app_open in the 14 days before the trigger"
+   ]
+  }
+ ],
+ "decisions": [
+  "D-2275",
+  "D-2489",
+  "D-2705"
+ ],
+ "actions": [
+  "A-1143",
+  "A-1144",
+  "A-1355"
+ ],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-01948",
+   "arm": "agent",
+   "goal_id": "G12",
+   "started_at": "2026-10-01T15:30:25.991Z",
+   "deadline": "2026-10-08T15:30:25.991Z",
+   "rule_version": "v1",
+   "shadow": false,
+   "primary": true,
+   "goal_status_at_replay_end": "no_longer_eligible",
+   "result": "succeeded",
+   "reason": "play_started seen inside the window",
+   "signal_event_id": "oua-013148",
+   "signal_at": "2026-10-01T17:53:07.390Z",
+   "exposed_to_agent": true
+  },
+  {
+   "viewer_id": "U-01948",
+   "arm": "agent",
+   "goal_id": "G02",
+   "started_at": "2026-10-01T16:35:12.206Z",
+   "deadline": "2026-10-04T16:35:12.206Z",
+   "rule_version": "v1",
+   "shadow": false,
+   "primary": false,
+   "goal_status_at_replay_end": "open",
+   "result": "succeeded",
+   "reason": "episode_completed seen inside the window",
+   "signal_event_id": "oua-013149",
+   "signal_at": "2026-10-01T18:08:07.390Z",
+   "exposed_to_agent": true
+  }
+ ],
+ "learned": [
+  "goal G12 retired: no_longer_eligible",
+  "goal G12 succeeded",
+  "goal G02 succeeded"
+ ]
+}

@@ -1,0 +1,94 @@
+{
+ "viewer_id": "U-04533",
+ "arm": "agent",
+ "facts": {
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "as_of": "2026-10-01T11:02:29.962Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting",
+   "as_of": "2026-10-01T11:02:29.962Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 35.0
+  },
+  "push_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 35.0
+  },
+  "whatsapp_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 35.0
+  },
+  "signup_at": {
+   "value": "2026-09-04T10:44:49.422Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 35.0
+  }
+ },
+ "conflicts": [
+  "profile_dialect:"
+ ],
+ "goal": {
+  "id": "G05",
+  "name": "first_paid_7d",
+  "started_at": "2026-10-01T03:51:37.742Z",
+  "deadline": "2026-10-08T03:51:37.742Z",
+  "success": {
+   "event": "purchase_completed",
+   "condition": "is_trial = false",
+   "window_hours": 168
+  },
+  "rule_version": "v1",
+  "context": {},
+  "status": "open",
+  "shadow": false,
+  "evidence": [
+   "subscription:profile"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-0279",
+  "D-1383"
+ ],
+ "actions": [
+  "A-0157",
+  "A-0649"
+ ],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-04533",
+   "arm": "agent",
+   "goal_id": "G05",
+   "started_at": "2026-10-01T03:51:37.742Z",
+   "deadline": "2026-10-08T03:51:37.742Z",
+   "rule_version": "v1",
+   "shadow": false,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "failed",
+   "reason": "no purchase_completed inside the window",
+   "signal_event_id": null,
+   "signal_at": null,
+   "exposed_to_agent": true
+  }
+ ],
+ "learned": [
+  "goal G05 failed even though a personalised page/message reached the viewer"
+ ]
+}

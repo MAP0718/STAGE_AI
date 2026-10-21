@@ -1,0 +1,93 @@
+{
+ "viewer_id": "U-01330",
+ "arm": "holdout",
+ "facts": {
+  "dialect": {
+   "value": "d2",
+   "source": "app_setting",
+   "as_of": "2026-10-01T07:54:07.389Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting",
+   "as_of": "2026-10-01T07:54:07.389Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 31.9
+  },
+  "push_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 31.9
+  },
+  "whatsapp_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 31.9
+  },
+  "signup_at": {
+   "value": "2026-09-25T04:40:11.024Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 31.9
+  }
+ },
+ "conflicts": [
+  "profile_dialect:d3"
+ ],
+ "goal": {
+  "id": "G01",
+  "name": "first_play_24h",
+  "started_at": "2026-10-01T07:44:27.530Z",
+  "deadline": "2026-10-02T07:44:27.530Z",
+  "success": {
+   "event": "play_started",
+   "condition": "any title",
+   "window_hours": 24
+  },
+  "rule_version": "v1",
+  "context": {},
+  "status": "open",
+  "shadow": true,
+  "evidence": [
+   "signup:2026-09-25T04:40:11.024Z",
+   "no play_started in history"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-0953",
+  "D-0954",
+  "D-0984"
+ ],
+ "actions": [],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-01330",
+   "arm": "holdout",
+   "goal_id": "G01",
+   "started_at": "2026-10-01T07:44:27.530Z",
+   "deadline": "2026-10-02T07:44:27.530Z",
+   "rule_version": "v1",
+   "shadow": true,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "succeeded",
+   "reason": "play_started seen inside the window",
+   "signal_event_id": "oua-009033",
+   "signal_at": "2026-10-01T07:57:38.389Z",
+   "exposed_to_agent": false
+  }
+ ],
+ "learned": [
+  "goal G01 succeeded"
+ ]
+}

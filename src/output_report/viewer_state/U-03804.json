@@ -1,0 +1,91 @@
+{
+ "viewer_id": "U-03804",
+ "arm": "agent",
+ "facts": {
+  "dialect": {
+   "value": "d2",
+   "source": "app_setting(last known)",
+   "as_of": "2026-09-30T17:23:51.147Z",
+   "age_hours": 23.3
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting(last known)",
+   "as_of": "2026-09-30T17:23:51.147Z",
+   "age_hours": 23.3
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 40.7
+  },
+  "push_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 40.7
+  },
+  "whatsapp_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 40.7
+  },
+  "signup_at": {
+   "value": "2024-12-10T20:42:23.826Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 40.7
+  }
+ },
+ "conflicts": [],
+ "goal": {
+  "id": "G08",
+  "name": "try_new_release_7d",
+  "started_at": "2026-10-01T16:41:08.120Z",
+  "deadline": "2026-10-08T16:41:08.120Z",
+  "success": {
+   "event": "play_started",
+   "condition": "a title released in the 30 days before the goal start",
+   "window_hours": 168
+  },
+  "rule_version": "v1",
+  "context": {},
+  "status": "open",
+  "shadow": false,
+  "evidence": [
+   "subscription:profile"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-2510",
+  "D-2511"
+ ],
+ "actions": [
+  "A-1264"
+ ],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-03804",
+   "arm": "agent",
+   "goal_id": "G08",
+   "started_at": "2026-10-01T16:41:08.120Z",
+   "deadline": "2026-10-08T16:41:08.120Z",
+   "rule_version": "v1",
+   "shadow": false,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "failed",
+   "reason": "no play_started inside the window",
+   "signal_event_id": null,
+   "signal_at": null,
+   "exposed_to_agent": false
+  }
+ ],
+ "learned": [
+  "goal G08 failed (no exposure to learn from)"
+ ]
+}

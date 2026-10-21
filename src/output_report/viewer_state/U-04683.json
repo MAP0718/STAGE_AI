@@ -1,0 +1,93 @@
+{
+ "viewer_id": "U-04683",
+ "arm": "holdout",
+ "facts": {
+  "dialect": {
+   "value": "d4",
+   "source": "app_setting",
+   "as_of": "2026-10-01T12:04:40.558Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting",
+   "as_of": "2026-10-01T12:04:40.558Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 36.1
+  },
+  "push_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 36.1
+  },
+  "whatsapp_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 36.1
+  },
+  "signup_at": {
+   "value": "2025-10-10T07:49:26.504Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 36.1
+  }
+ },
+ "conflicts": [
+  "profile_dialect:d6"
+ ],
+ "goal": {
+  "id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T12:04:40.558Z",
+  "deadline": "2026-10-04T12:04:40.558Z",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "rule_version": "v1",
+  "context": {
+   "series_slug": "radi-d4"
+  },
+  "status": "open",
+  "shadow": true,
+  "evidence": [
+   "event:eb1bf9a7-47a6-4246-88ca-eae8b417876f",
+   "episodes:radi-d4"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-1522"
+ ],
+ "actions": [],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-04683",
+   "arm": "holdout",
+   "goal_id": "G07",
+   "started_at": "2026-10-01T12:04:40.558Z",
+   "deadline": "2026-10-04T12:04:40.558Z",
+   "rule_version": "v1",
+   "shadow": true,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "failed",
+   "reason": "no play_started inside the window",
+   "signal_event_id": null,
+   "signal_at": null,
+   "exposed_to_agent": false
+  }
+ ],
+ "learned": [
+  "goal G07 failed (no exposure to learn from)"
+ ]
+}

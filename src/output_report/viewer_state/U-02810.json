@@ -1,0 +1,89 @@
+{
+ "viewer_id": "U-02810",
+ "arm": "holdout",
+ "facts": {
+  "dialect": {
+   "value": "d4",
+   "source": "app_setting",
+   "as_of": "2026-10-01T13:55:17.102Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "en",
+   "source": "app_setting",
+   "as_of": "2026-10-01T13:55:17.102Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 37.9
+  },
+  "push_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 37.9
+  },
+  "whatsapp_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 37.9
+  },
+  "signup_at": {
+   "value": "2026-01-28T15:14:57.606Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 37.9
+  }
+ },
+ "conflicts": [],
+ "goal": {
+  "id": "G12",
+  "name": "return_after_absence_7d",
+  "started_at": "2026-10-01T13:55:17.102Z",
+  "deadline": "2026-10-08T13:55:17.102Z",
+  "success": {
+   "event": "play_started",
+   "condition": "any title",
+   "window_hours": 168
+  },
+  "rule_version": "v1",
+  "context": {},
+  "status": "open",
+  "shadow": true,
+  "evidence": [
+   "last app_open:177298ed-c827-48b5-bf58-867192a65b01",
+   "no app_open in the 14 days before the trigger"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-1789"
+ ],
+ "actions": [],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-02810",
+   "arm": "holdout",
+   "goal_id": "G12",
+   "started_at": "2026-10-01T13:55:17.102Z",
+   "deadline": "2026-10-08T13:55:17.102Z",
+   "rule_version": "v1",
+   "shadow": true,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "succeeded",
+   "reason": "play_started seen inside the window",
+   "signal_event_id": "oua-017927",
+   "signal_at": "2026-10-01T13:58:37.102Z",
+   "exposed_to_agent": false
+  }
+ ],
+ "learned": [
+  "goal G12 succeeded"
+ ]
+}

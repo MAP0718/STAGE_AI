@@ -1,0 +1,129 @@
+{
+ "viewer_id": "U-01406",
+ "arm": "holdout",
+ "facts": {
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "as_of": "2026-10-01T15:15:46.506Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting",
+   "as_of": "2026-10-01T15:15:46.506Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 39.3
+  },
+  "push_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 39.3
+  },
+  "whatsapp_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 39.3
+  },
+  "signup_at": {
+   "value": "2025-07-04T08:41:38.556Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 39.3
+  }
+ },
+ "conflicts": [
+  "profile_dialect:d6"
+ ],
+ "goal": {
+  "id": "G05",
+  "name": "first_paid_7d",
+  "started_at": "2026-10-01T15:15:46.506Z",
+  "deadline": "2026-10-08T15:15:46.506Z",
+  "success": {
+   "event": "purchase_completed",
+   "condition": "is_trial = false",
+   "window_hours": 168
+  },
+  "rule_version": "v1",
+  "context": {},
+  "status": "open",
+  "shadow": true,
+  "evidence": [
+   "subscription:profile"
+  ]
+ },
+ "goal_history": [
+  {
+   "id": "G12",
+   "name": "return_after_absence_7d",
+   "started_at": "2026-10-01T10:04:44.687Z",
+   "deadline": "2026-10-08T10:04:44.687Z",
+   "success": {
+    "event": "play_started",
+    "condition": "any title",
+    "window_hours": 168
+   },
+   "rule_version": "v1",
+   "context": {},
+   "status": "no_longer_eligible",
+   "shadow": true,
+   "evidence": [
+    "last app_open:3fb39787-6bbd-439d-a29c-cb478445130c",
+    "no app_open in the 14 days before the trigger"
+   ]
+  }
+ ],
+ "decisions": [
+  "D-1260",
+  "D-2212"
+ ],
+ "actions": [],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-01406",
+   "arm": "holdout",
+   "goal_id": "G12",
+   "started_at": "2026-10-01T10:04:44.687Z",
+   "deadline": "2026-10-08T10:04:44.687Z",
+   "rule_version": "v1",
+   "shadow": true,
+   "primary": true,
+   "goal_status_at_replay_end": "no_longer_eligible",
+   "result": "succeeded",
+   "reason": "play_started seen inside the window",
+   "signal_event_id": "oua-009648",
+   "signal_at": "2026-10-01T10:07:34.687Z",
+   "exposed_to_agent": false
+  },
+  {
+   "viewer_id": "U-01406",
+   "arm": "holdout",
+   "goal_id": "G05",
+   "started_at": "2026-10-01T15:15:46.506Z",
+   "deadline": "2026-10-08T15:15:46.506Z",
+   "rule_version": "v1",
+   "shadow": true,
+   "primary": false,
+   "goal_status_at_replay_end": "open",
+   "result": "failed",
+   "reason": "no purchase_completed inside the window",
+   "signal_event_id": null,
+   "signal_at": null,
+   "exposed_to_agent": false
+  }
+ ],
+ "learned": [
+  "goal G12 retired: no_longer_eligible",
+  "goal G12 succeeded",
+  "goal G05 failed (no exposure to learn from)"
+ ]
+}

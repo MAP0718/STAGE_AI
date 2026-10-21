@@ -1,0 +1,92 @@
+{
+ "viewer_id": "U-01001",
+ "arm": "holdout",
+ "facts": {
+  "dialect": {
+   "value": "d2",
+   "source": "app_setting",
+   "as_of": "2026-10-01T13:44:13.303Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "en",
+   "source": "app_setting",
+   "as_of": "2026-10-01T13:44:13.303Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 37.7
+  },
+  "push_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 37.7
+  },
+  "whatsapp_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 37.7
+  },
+  "signup_at": {
+   "value": "2024-10-11T21:25:16.112Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 37.7
+  }
+ },
+ "conflicts": [],
+ "goal": {
+  "id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T13:44:13.303Z",
+  "deadline": "2026-10-04T13:44:13.303Z",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "rule_version": "v1",
+  "context": {
+   "series_slug": "guka-kosusa-d2"
+  },
+  "status": "open",
+  "shadow": true,
+  "evidence": [
+   "event:4a52c3b3-0715-4e1e-a206-9eab6c51a8a7",
+   "episodes:guka-kosusa-d2"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-1748",
+  "D-1749"
+ ],
+ "actions": [],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-01001",
+   "arm": "holdout",
+   "goal_id": "G07",
+   "started_at": "2026-10-01T13:44:13.303Z",
+   "deadline": "2026-10-04T13:44:13.303Z",
+   "rule_version": "v1",
+   "shadow": true,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "failed",
+   "reason": "no play_started inside the window",
+   "signal_event_id": null,
+   "signal_at": null,
+   "exposed_to_agent": false
+  }
+ ],
+ "learned": [
+  "goal G07 failed (no exposure to learn from)"
+ ]
+}

@@ -1,0 +1,92 @@
+{
+ "viewer_id": "U-00530",
+ "arm": "holdout",
+ "facts": {
+  "dialect": {
+   "value": "d4",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 39.1
+  },
+  "language": {
+   "value": "hin",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 39.1
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 39.1
+  },
+  "push_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 39.1
+  },
+  "whatsapp_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 39.1
+  },
+  "signup_at": {
+   "value": "2026-04-15T16:21:22.380Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 39.1
+  }
+ },
+ "conflicts": [],
+ "goal": {
+  "id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T15:04:34.400Z",
+  "deadline": "2026-10-04T15:04:34.400Z",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "rule_version": "v1",
+  "context": {
+   "series_slug": "guka-kosusa-d2"
+  },
+  "status": "open",
+  "shadow": true,
+  "evidence": [
+   "event:57eb0bca-f358-4510-9b9d-9d46650d0bf8",
+   "episodes:guka-kosusa-d2"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-2089",
+  "D-2187"
+ ],
+ "actions": [],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-00530",
+   "arm": "holdout",
+   "goal_id": "G07",
+   "started_at": "2026-10-01T15:04:34.400Z",
+   "deadline": "2026-10-04T15:04:34.400Z",
+   "rule_version": "v1",
+   "shadow": true,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "failed",
+   "reason": "no play_started inside the window",
+   "signal_event_id": null,
+   "signal_at": null,
+   "exposed_to_agent": false
+  }
+ ],
+ "learned": [
+  "goal G07 failed (no exposure to learn from)"
+ ]
+}

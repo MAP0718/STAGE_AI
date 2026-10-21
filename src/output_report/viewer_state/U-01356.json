@@ -1,0 +1,99 @@
+{
+ "viewer_id": "U-01356",
+ "arm": "agent",
+ "facts": {
+  "dialect": {
+   "value": "d3",
+   "source": "app_setting",
+   "as_of": "2026-10-01T08:14:53.984Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting",
+   "as_of": "2026-10-01T08:14:53.984Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 32.2
+  },
+  "push_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 32.2
+  },
+  "whatsapp_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 32.2
+  },
+  "signup_at": {
+   "value": "2025-12-01T00:12:35.821Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 32.2
+  }
+ },
+ "conflicts": [],
+ "goal": {
+  "id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T04:20:57.158Z",
+  "deadline": "2026-10-04T04:20:57.158Z",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "rule_version": "v1",
+  "context": {
+   "series_slug": "yatite-roloda-d3"
+  },
+  "status": "open",
+  "shadow": false,
+  "evidence": [
+   "event:48c7f886-fd4c-4aca-a93e-d991df8a2395",
+   "episodes:yatite-roloda-d3"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-0316",
+  "D-0868",
+  "D-1025",
+  "D-1798",
+  "D-1799"
+ ],
+ "actions": [
+  "A-0177",
+  "A-0178",
+  "A-0370"
+ ],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-01356",
+   "arm": "agent",
+   "goal_id": "G07",
+   "started_at": "2026-10-01T04:20:57.158Z",
+   "deadline": "2026-10-04T04:20:57.158Z",
+   "rule_version": "v1",
+   "shadow": false,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "failed",
+   "reason": "no play_started inside the window",
+   "signal_event_id": null,
+   "signal_at": null,
+   "exposed_to_agent": true
+  }
+ ],
+ "learned": [
+  "goal G07 failed even though a personalised page/message reached the viewer"
+ ]
+}

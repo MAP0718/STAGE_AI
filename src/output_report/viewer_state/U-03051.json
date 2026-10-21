@@ -1,0 +1,93 @@
+{
+ "viewer_id": "U-03051",
+ "arm": "agent",
+ "facts": {
+  "dialect": {
+   "value": "d4",
+   "source": "app_setting",
+   "as_of": "2026-10-01T10:35:06.863Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting",
+   "as_of": "2026-10-01T10:35:06.863Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 34.6
+  },
+  "push_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 34.6
+  },
+  "whatsapp_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 34.6
+  },
+  "signup_at": {
+   "value": "2026-06-02T13:11:58.542Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 34.6
+  }
+ },
+ "conflicts": [],
+ "goal": {
+  "id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T10:35:06.863Z",
+  "deadline": "2026-10-04T10:35:06.863Z",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "rule_version": "v1",
+  "context": {
+   "series_slug": "bagi-baya-d4"
+  },
+  "status": "open",
+  "shadow": false,
+  "evidence": [
+   "event:084e4bc3-c3cb-4966-9294-1fbf5dbd5763",
+   "episodes:bagi-baya-d4"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-1314"
+ ],
+ "actions": [
+  "A-0604"
+ ],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-03051",
+   "arm": "agent",
+   "goal_id": "G07",
+   "started_at": "2026-10-01T10:35:06.863Z",
+   "deadline": "2026-10-04T10:35:06.863Z",
+   "rule_version": "v1",
+   "shadow": false,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "failed",
+   "reason": "no play_started inside the window",
+   "signal_event_id": null,
+   "signal_at": null,
+   "exposed_to_agent": true
+  }
+ ],
+ "learned": [
+  "goal G07 failed even though a personalised page/message reached the viewer"
+ ]
+}

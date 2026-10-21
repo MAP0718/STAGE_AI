@@ -1,0 +1,15 @@
+{
+ "viewer_id": "U-01456",
+ "arm": "agent",
+ "facts": {},
+ "conflicts": [],
+ "goal": null,
+ "goal_history": [],
+ "decisions": [
+  "D-0631"
+ ],
+ "actions": [],
+ "cancelled_actions": [],
+ "outcomes": [],
+ "learned": []
+}

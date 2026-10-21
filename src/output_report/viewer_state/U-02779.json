@@ -1,0 +1,92 @@
+{
+ "viewer_id": "U-02779",
+ "arm": "holdout",
+ "facts": {
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "as_of": "2026-10-01T12:07:53.585Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting",
+   "as_of": "2026-10-01T12:07:53.585Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "active",
+   "source": "event:purchase_completed",
+   "as_of": "2026-10-01T05:28:44.607Z",
+   "age_hours": 6.7
+  },
+  "push_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 36.1
+  },
+  "whatsapp_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 36.1
+  },
+  "signup_at": {
+   "value": "2025-11-24T05:40:24.226Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 36.1
+  }
+ },
+ "conflicts": [
+  "profile_subscription:never"
+ ],
+ "goal": {
+  "id": "G02",
+  "name": "first_full_episode_3d",
+  "started_at": "2026-10-01T05:26:25.646Z",
+  "deadline": "2026-10-04T05:26:25.646Z",
+  "success": {
+   "event": "episode_completed",
+   "condition": "any episode",
+   "window_hours": 72
+  },
+  "rule_version": "v1",
+  "context": {},
+  "status": "open",
+  "shadow": true,
+  "evidence": [
+   "no episode_completed in the 30-day history"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-0668",
+  "D-1097",
+  "D-1529"
+ ],
+ "actions": [],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-02779",
+   "arm": "holdout",
+   "goal_id": "G02",
+   "started_at": "2026-10-01T05:26:25.646Z",
+   "deadline": "2026-10-04T05:26:25.646Z",
+   "rule_version": "v1",
+   "shadow": true,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "failed",
+   "reason": "no episode_completed inside the window",
+   "signal_event_id": null,
+   "signal_at": null,
+   "exposed_to_agent": false
+  }
+ ],
+ "learned": [
+  "goal G02 failed (no exposure to learn from)"
+ ]
+}

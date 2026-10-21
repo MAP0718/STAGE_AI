@@ -1,0 +1,88 @@
+{
+ "viewer_id": "U-01421",
+ "arm": "holdout",
+ "facts": {
+  "dialect": {
+   "value": "d2",
+   "source": "app_setting",
+   "as_of": "2026-10-01T14:06:10.147Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "en",
+   "source": "app_setting",
+   "as_of": "2026-10-01T14:06:10.147Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "lapsed",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 38.1
+  },
+  "push_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 38.1
+  },
+  "whatsapp_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 38.1
+  },
+  "signup_at": {
+   "value": "2026-01-06T22:01:52.391Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 38.1
+  }
+ },
+ "conflicts": [],
+ "goal": {
+  "id": "G06",
+  "name": "reactivate_lapsed_14d",
+  "started_at": "2026-10-01T14:06:10.147Z",
+  "deadline": "2026-10-15T14:06:10.147Z",
+  "success": {
+   "event": "purchase_completed",
+   "condition": "any paid plan",
+   "window_hours": 336
+  },
+  "rule_version": "v1",
+  "context": {},
+  "status": "open",
+  "shadow": true,
+  "evidence": [
+   "subscription:profile"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-1825"
+ ],
+ "actions": [],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-01421",
+   "arm": "holdout",
+   "goal_id": "G06",
+   "started_at": "2026-10-01T14:06:10.147Z",
+   "deadline": "2026-10-15T14:06:10.147Z",
+   "rule_version": "v1",
+   "shadow": true,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "succeeded",
+   "reason": "purchase_completed seen inside the window",
+   "signal_event_id": "oua-009803",
+   "signal_at": "2026-10-07T06:46:00.000Z",
+   "exposed_to_agent": false
+  }
+ ],
+ "learned": [
+  "goal G06 succeeded"
+ ]
+}

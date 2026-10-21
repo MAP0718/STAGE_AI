@@ -1,0 +1,95 @@
+{
+ "viewer_id": "U-03595",
+ "arm": "agent",
+ "facts": {
+  "dialect": {
+   "value": "d3",
+   "source": "app_setting",
+   "as_of": "2026-10-01T18:13:20.558Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "en",
+   "source": "app_setting",
+   "as_of": "2026-10-01T18:13:20.558Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 42.2
+  },
+  "push_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 42.2
+  },
+  "whatsapp_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 42.2
+  },
+  "signup_at": {
+   "value": "2026-01-22T05:08:30.708Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 42.2
+  }
+ },
+ "conflicts": [],
+ "goal": {
+  "id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T16:52:49.863Z",
+  "deadline": "2026-10-04T16:52:49.863Z",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "rule_version": "v1",
+  "context": {
+   "series_slug": "pate-kari-d3"
+  },
+  "status": "open",
+  "shadow": false,
+  "evidence": [
+   "event:60bc0f86-e0ad-4775-85bf-d0847cdda493",
+   "episodes:pate-kari-d3"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-2556",
+  "D-2746"
+ ],
+ "actions": [
+  "A-1286",
+  "A-1287"
+ ],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-03595",
+   "arm": "agent",
+   "goal_id": "G07",
+   "started_at": "2026-10-01T16:52:49.863Z",
+   "deadline": "2026-10-04T16:52:49.863Z",
+   "rule_version": "v1",
+   "shadow": false,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "succeeded",
+   "reason": "play_started seen inside the window",
+   "signal_event_id": "oua-023095",
+   "signal_at": "2026-10-01T18:14:03.558Z",
+   "exposed_to_agent": true
+  }
+ ],
+ "learned": [
+  "goal G07 succeeded"
+ ]
+}

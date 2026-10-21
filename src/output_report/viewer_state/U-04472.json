@@ -1,0 +1,92 @@
+{
+ "viewer_id": "U-04472",
+ "arm": "holdout",
+ "facts": {
+  "dialect": {
+   "value": "d3",
+   "source": "app_setting",
+   "as_of": "2026-10-01T15:15:40.627Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting",
+   "as_of": "2026-10-01T15:15:40.627Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 39.3
+  },
+  "push_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 39.3
+  },
+  "whatsapp_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 39.3
+  },
+  "signup_at": {
+   "value": "2026-01-26T04:15:21.793Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 39.3
+  }
+ },
+ "conflicts": [],
+ "goal": {
+  "id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T07:21:04.585Z",
+  "deadline": "2026-10-04T07:21:04.585Z",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "rule_version": "v1",
+  "context": {
+   "series_slug": "haja-d3"
+  },
+  "status": "open",
+  "shadow": true,
+  "evidence": [
+   "event:ce951d24-cb83-4550-bc1f-c405befd58a0",
+   "episodes:haja-d3"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-0906",
+  "D-2210"
+ ],
+ "actions": [],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-04472",
+   "arm": "holdout",
+   "goal_id": "G07",
+   "started_at": "2026-10-01T07:21:04.585Z",
+   "deadline": "2026-10-04T07:21:04.585Z",
+   "rule_version": "v1",
+   "shadow": true,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "failed",
+   "reason": "no play_started inside the window",
+   "signal_event_id": null,
+   "signal_at": null,
+   "exposed_to_agent": false
+  }
+ ],
+ "learned": [
+  "goal G07 failed (no exposure to learn from)"
+ ]
+}

@@ -1,0 +1,94 @@
+{
+ "viewer_id": "U-01339",
+ "arm": "holdout",
+ "facts": {
+  "dialect": {
+   "value": "d3",
+   "source": "app_setting",
+   "as_of": "2026-10-01T15:05:03.148Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting",
+   "as_of": "2026-10-01T15:05:03.148Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 39.1
+  },
+  "push_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 39.1
+  },
+  "whatsapp_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 39.1
+  },
+  "signup_at": {
+   "value": "2025-05-17T14:10:44.963Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 39.1
+  }
+ },
+ "conflicts": [
+  "profile_dialect:d6",
+  "campaign_link_dialect:d1"
+ ],
+ "goal": {
+  "id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T15:05:03.148Z",
+  "deadline": "2026-10-04T15:05:03.148Z",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "rule_version": "v1",
+  "context": {
+   "series_slug": "yane-tegi-d3"
+  },
+  "status": "open",
+  "shadow": true,
+  "evidence": [
+   "event:4f6c06de-e787-44ac-8fcf-9b3b3a736d7b",
+   "episodes:yane-tegi-d3"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-2097"
+ ],
+ "actions": [],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-01339",
+   "arm": "holdout",
+   "goal_id": "G07",
+   "started_at": "2026-10-01T15:05:03.148Z",
+   "deadline": "2026-10-04T15:05:03.148Z",
+   "rule_version": "v1",
+   "shadow": true,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "failed",
+   "reason": "no play_started inside the window",
+   "signal_event_id": null,
+   "signal_at": null,
+   "exposed_to_agent": false
+  }
+ ],
+ "learned": [
+  "goal G07 failed (no exposure to learn from)"
+ ]
+}

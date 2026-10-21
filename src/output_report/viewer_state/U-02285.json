@@ -1,0 +1,93 @@
+{
+ "viewer_id": "U-02285",
+ "arm": "holdout",
+ "facts": {
+  "dialect": {
+   "value": "NA",
+   "source": "app_setting",
+   "as_of": "2026-10-01T13:43:47.805Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "en",
+   "source": "app_setting",
+   "as_of": "2026-10-01T13:43:47.805Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 37.7
+  },
+  "push_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 37.7
+  },
+  "whatsapp_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 37.7
+  },
+  "signup_at": {
+   "value": "2025-01-20T18:31:30.167Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 37.7
+  }
+ },
+ "conflicts": [
+  "profile_dialect:d6"
+ ],
+ "goal": {
+  "id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T13:43:47.805Z",
+  "deadline": "2026-10-04T13:43:47.805Z",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "rule_version": "v1",
+  "context": {
+   "series_slug": "guka-kosusa-d2"
+  },
+  "status": "open",
+  "shadow": true,
+  "evidence": [
+   "event:340565c4-7ad1-4bfe-b9bc-4875335d7868",
+   "episodes:guka-kosusa-d2"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-1746"
+ ],
+ "actions": [],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-02285",
+   "arm": "holdout",
+   "goal_id": "G07",
+   "started_at": "2026-10-01T13:43:47.805Z",
+   "deadline": "2026-10-04T13:43:47.805Z",
+   "rule_version": "v1",
+   "shadow": true,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "failed",
+   "reason": "no play_started inside the window",
+   "signal_event_id": null,
+   "signal_at": null,
+   "exposed_to_agent": false
+  }
+ ],
+ "learned": [
+  "goal G07 failed (no exposure to learn from)"
+ ]
+}

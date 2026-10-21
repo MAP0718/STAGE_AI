@@ -1,0 +1,94 @@
+{
+ "viewer_id": "U-04813",
+ "arm": "holdout",
+ "facts": {
+  "dialect": {
+   "value": "d2",
+   "source": "app_setting",
+   "as_of": "2026-10-01T15:16:16.786Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting",
+   "as_of": "2026-10-01T15:16:16.786Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 39.3
+  },
+  "push_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 39.3
+  },
+  "whatsapp_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 39.3
+  },
+  "signup_at": {
+   "value": "2024-10-11T00:14:07.496Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 39.3
+  }
+ },
+ "conflicts": [
+  "profile_dialect:d3"
+ ],
+ "goal": {
+  "id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T15:16:16.786Z",
+  "deadline": "2026-10-04T15:16:16.786Z",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "rule_version": "v1",
+  "context": {
+   "series_slug": "molo-d2"
+  },
+  "status": "open",
+  "shadow": true,
+  "evidence": [
+   "event:6fc885cb-d852-4451-8fbb-43edcba224cb",
+   "episodes:molo-d2"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-2214",
+  "D-2232"
+ ],
+ "actions": [],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-04813",
+   "arm": "holdout",
+   "goal_id": "G07",
+   "started_at": "2026-10-01T15:16:16.786Z",
+   "deadline": "2026-10-04T15:16:16.786Z",
+   "rule_version": "v1",
+   "shadow": true,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "failed",
+   "reason": "no play_started inside the window",
+   "signal_event_id": null,
+   "signal_at": null,
+   "exposed_to_agent": false
+  }
+ ],
+ "learned": [
+  "goal G07 failed (no exposure to learn from)"
+ ]
+}

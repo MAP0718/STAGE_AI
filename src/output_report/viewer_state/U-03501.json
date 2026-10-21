@@ -1,0 +1,93 @@
+{
+ "viewer_id": "U-03501",
+ "arm": "agent",
+ "facts": {
+  "dialect": {
+   "value": "d6",
+   "source": "app_setting",
+   "as_of": "2026-10-01T11:46:19.337Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting",
+   "as_of": "2026-10-01T11:46:19.337Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 35.8
+  },
+  "push_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 35.8
+  },
+  "whatsapp_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 35.8
+  },
+  "signup_at": {
+   "value": "2024-10-20T19:45:08.316Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 35.8
+  }
+ },
+ "conflicts": [],
+ "goal": {
+  "id": "G08",
+  "name": "try_new_release_7d",
+  "started_at": "2026-10-01T04:33:53.254Z",
+  "deadline": "2026-10-08T04:33:53.254Z",
+  "success": {
+   "event": "play_started",
+   "condition": "a title released in the 30 days before the goal start",
+   "window_hours": 168
+  },
+  "rule_version": "v1",
+  "context": {},
+  "status": "open",
+  "shadow": false,
+  "evidence": [
+   "subscription:profile"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-0339",
+  "D-0795",
+  "D-1460"
+ ],
+ "actions": [
+  "A-0185",
+  "A-0683"
+ ],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-03501",
+   "arm": "agent",
+   "goal_id": "G08",
+   "started_at": "2026-10-01T04:33:53.254Z",
+   "deadline": "2026-10-08T04:33:53.254Z",
+   "rule_version": "v1",
+   "shadow": false,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "failed",
+   "reason": "no play_started inside the window",
+   "signal_event_id": null,
+   "signal_at": null,
+   "exposed_to_agent": true
+  }
+ ],
+ "learned": [
+  "goal G08 failed even though a personalised page/message reached the viewer"
+ ]
+}

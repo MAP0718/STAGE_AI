@@ -1,0 +1,90 @@
+{
+ "viewer_id": "U-00930",
+ "arm": "agent",
+ "facts": {
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "as_of": "2026-10-01T04:00:37.700Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting",
+   "as_of": "2026-10-01T04:00:37.700Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 28.0
+  },
+  "push_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 28.0
+  },
+  "whatsapp_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 28.0
+  },
+  "signup_at": {
+   "value": "2025-06-20T17:07:18.904Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 28.0
+  }
+ },
+ "conflicts": [],
+ "goal": {
+  "id": "G02",
+  "name": "first_full_episode_3d",
+  "started_at": "2026-10-01T04:00:37.700Z",
+  "deadline": "2026-10-04T04:00:37.700Z",
+  "success": {
+   "event": "episode_completed",
+   "condition": "any episode",
+   "window_hours": 72
+  },
+  "rule_version": "v1",
+  "context": {},
+  "status": "open",
+  "shadow": false,
+  "evidence": [
+   "no episode_completed in the 30-day history"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-0288"
+ ],
+ "actions": [
+  "A-0164"
+ ],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-00930",
+   "arm": "agent",
+   "goal_id": "G02",
+   "started_at": "2026-10-01T04:00:37.700Z",
+   "deadline": "2026-10-04T04:00:37.700Z",
+   "rule_version": "v1",
+   "shadow": false,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "failed",
+   "reason": "no episode_completed inside the window",
+   "signal_event_id": null,
+   "signal_at": null,
+   "exposed_to_agent": true
+  }
+ ],
+ "learned": [
+  "goal G02 failed even though a personalised page/message reached the viewer"
+ ]
+}

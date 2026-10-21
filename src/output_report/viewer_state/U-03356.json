@@ -1,0 +1,138 @@
+{
+ "viewer_id": "U-03356",
+ "arm": "agent",
+ "facts": {
+  "dialect": {
+   "value": "d3",
+   "source": "app_setting",
+   "as_of": "2026-10-01T11:40:07.207Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "en",
+   "source": "app_setting",
+   "as_of": "2026-10-01T11:40:07.207Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "active",
+   "source": "event:purchase_completed",
+   "as_of": "2026-10-01T10:47:08.587Z",
+   "age_hours": 0.9
+  },
+  "push_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 35.7
+  },
+  "whatsapp_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 35.7
+  },
+  "signup_at": {
+   "value": "2025-08-28T11:30:37.079Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 35.7
+  }
+ },
+ "conflicts": [
+  "profile_dialect:d5",
+  "profile_subscription:lapsed"
+ ],
+ "goal": {
+  "id": "G02",
+  "name": "first_full_episode_3d",
+  "started_at": "2026-10-01T11:40:07.207Z",
+  "deadline": "2026-10-04T11:40:07.207Z",
+  "success": {
+   "event": "episode_completed",
+   "condition": "any episode",
+   "window_hours": 72
+  },
+  "rule_version": "v1",
+  "context": {},
+  "status": "open",
+  "shadow": false,
+  "evidence": [
+   "no episode_completed in the 30-day history"
+  ]
+ },
+ "goal_history": [
+  {
+   "id": "G06",
+   "name": "reactivate_lapsed_14d",
+   "started_at": "2026-10-01T10:44:58.427Z",
+   "deadline": "2026-10-15T10:44:58.427Z",
+   "success": {
+    "event": "purchase_completed",
+    "condition": "any paid plan",
+    "window_hours": 336
+   },
+   "rule_version": "v1",
+   "context": {},
+   "status": "closed_by_purchase",
+   "shadow": false,
+   "evidence": [
+    "subscription:profile"
+   ],
+   "closed_at": "2026-10-01T10:47:08.587Z"
+  }
+ ],
+ "decisions": [
+  "D-1338",
+  "D-1447"
+ ],
+ "actions": [
+  "A-0623",
+  "A-0624"
+ ],
+ "cancelled_actions": [
+  {
+   "action_id": "A-0624",
+   "reason": "purchase arrived; goal G06 no longer makes sense"
+  }
+ ],
+ "outcomes": [
+  {
+   "viewer_id": "U-03356",
+   "arm": "agent",
+   "goal_id": "G06",
+   "started_at": "2026-10-01T10:44:58.427Z",
+   "deadline": "2026-10-15T10:44:58.427Z",
+   "rule_version": "v1",
+   "shadow": false,
+   "primary": true,
+   "goal_status_at_replay_end": "closed_by_purchase",
+   "result": "succeeded",
+   "reason": "purchase_completed seen inside the window",
+   "signal_event_id": "536b67ae-0686-4c52-bfe5-b833b8897883",
+   "signal_at": "2026-10-01T10:47:08.587Z",
+   "exposed_to_agent": true
+  },
+  {
+   "viewer_id": "U-03356",
+   "arm": "agent",
+   "goal_id": "G02",
+   "started_at": "2026-10-01T11:40:07.207Z",
+   "deadline": "2026-10-04T11:40:07.207Z",
+   "rule_version": "v1",
+   "shadow": false,
+   "primary": false,
+   "goal_status_at_replay_end": "open",
+   "result": "failed",
+   "reason": "no episode_completed inside the window",
+   "signal_event_id": null,
+   "signal_at": null,
+   "exposed_to_agent": true
+  }
+ ],
+ "learned": [
+  "purchase at 2026-10-01T10:47:08.587Z closed goal G06; 1 pending message(s) cancelled; will re-plan",
+  "goal G06 succeeded",
+  "goal G02 failed even though a personalised page/message reached the viewer"
+ ]
+}

@@ -1,0 +1,89 @@
+{
+ "viewer_id": "U-01789",
+ "arm": "holdout",
+ "facts": {
+  "dialect": {
+   "value": "d6",
+   "source": "app_setting(last known)",
+   "as_of": "2026-09-22T15:43:36.888Z",
+   "age_hours": 214.4
+  },
+  "language": {
+   "value": "en",
+   "source": "app_setting(last known)",
+   "as_of": "2026-09-22T15:43:36.888Z",
+   "age_hours": 214.4
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 38.1
+  },
+  "push_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 38.1
+  },
+  "whatsapp_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 38.1
+  },
+  "signup_at": {
+   "value": "2025-12-17T11:49:39.534Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 38.1
+  }
+ },
+ "conflicts": [],
+ "goal": {
+  "id": "G05",
+  "name": "first_paid_7d",
+  "started_at": "2026-10-01T14:08:44.343Z",
+  "deadline": "2026-10-08T14:08:44.343Z",
+  "success": {
+   "event": "purchase_completed",
+   "condition": "is_trial = false",
+   "window_hours": 168
+  },
+  "rule_version": "v1",
+  "context": {},
+  "status": "open",
+  "shadow": true,
+  "evidence": [
+   "subscription:profile"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-1830",
+  "D-1832"
+ ],
+ "actions": [],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-01789",
+   "arm": "holdout",
+   "goal_id": "G05",
+   "started_at": "2026-10-01T14:08:44.343Z",
+   "deadline": "2026-10-08T14:08:44.343Z",
+   "rule_version": "v1",
+   "shadow": true,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "failed",
+   "reason": "no purchase_completed inside the window",
+   "signal_event_id": null,
+   "signal_at": null,
+   "exposed_to_agent": false
+  }
+ ],
+ "learned": [
+  "goal G05 failed (no exposure to learn from)"
+ ]
+}

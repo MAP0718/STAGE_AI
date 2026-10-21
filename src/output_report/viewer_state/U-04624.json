@@ -1,0 +1,93 @@
+{
+ "viewer_id": "U-04624",
+ "arm": "agent",
+ "facts": {
+  "dialect": {
+   "value": "d2",
+   "source": "app_setting",
+   "as_of": "2026-10-01T13:40:02.639Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting",
+   "as_of": "2026-10-01T13:40:02.639Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 37.7
+  },
+  "push_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 37.7
+  },
+  "whatsapp_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 37.7
+  },
+  "signup_at": {
+   "value": "2024-11-01T06:14:54.308Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 37.7
+  }
+ },
+ "conflicts": [],
+ "goal": {
+  "id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T13:40:02.639Z",
+  "deadline": "2026-10-04T13:40:02.639Z",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "rule_version": "v1",
+  "context": {
+   "series_slug": "hako-d2"
+  },
+  "status": "open",
+  "shadow": false,
+  "evidence": [
+   "event:aa1463dd-8da6-464f-9c89-a91e6f3b50d9",
+   "episodes:hako-d2"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-1734"
+ ],
+ "actions": [
+  "A-0820"
+ ],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-04624",
+   "arm": "agent",
+   "goal_id": "G07",
+   "started_at": "2026-10-01T13:40:02.639Z",
+   "deadline": "2026-10-04T13:40:02.639Z",
+   "rule_version": "v1",
+   "shadow": false,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "failed",
+   "reason": "no play_started inside the window",
+   "signal_event_id": null,
+   "signal_at": null,
+   "exposed_to_agent": true
+  }
+ ],
+ "learned": [
+  "goal G07 failed even though a personalised page/message reached the viewer"
+ ]
+}

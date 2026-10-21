@@ -1,0 +1,100 @@
+{
+ "viewer_id": "U-01171",
+ "arm": "agent",
+ "facts": {
+  "dialect": {
+   "value": "d5",
+   "source": "app_setting(last known)",
+   "as_of": "2026-10-01T15:03:33.807Z",
+   "age_hours": 2.4
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting(last known)",
+   "as_of": "2026-10-01T15:03:33.807Z",
+   "age_hours": 2.4
+  },
+  "subscription": {
+   "value": "lapsed",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 41.5
+  },
+  "push_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 41.5
+  },
+  "whatsapp_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 41.5
+  },
+  "signup_at": {
+   "value": "2025-01-03T03:16:02.766Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 41.5
+  }
+ },
+ "conflicts": [
+  "profile_dialect:d2"
+ ],
+ "goal": {
+  "id": "G06",
+  "name": "reactivate_lapsed_14d",
+  "started_at": "2026-10-01T10:02:20.706Z",
+  "deadline": "2026-10-15T10:02:20.706Z",
+  "success": {
+   "event": "purchase_completed",
+   "condition": "any paid plan",
+   "window_hours": 336
+  },
+  "rule_version": "v1",
+  "context": {},
+  "status": "open",
+  "shadow": false,
+  "evidence": [
+   "subscription:profile"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-0474",
+  "D-1259",
+  "D-2077",
+  "D-2665",
+  "D-2666"
+ ],
+ "actions": [
+  "A-0574",
+  "A-0575",
+  "A-1035",
+  "A-1036",
+  "A-1339"
+ ],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-01171",
+   "arm": "agent",
+   "goal_id": "G06",
+   "started_at": "2026-10-01T10:02:20.706Z",
+   "deadline": "2026-10-15T10:02:20.706Z",
+   "rule_version": "v1",
+   "shadow": false,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "succeeded",
+   "reason": "purchase_completed seen inside the window",
+   "signal_event_id": "oua-007923",
+   "signal_at": "2026-10-01T15:06:33.807Z",
+   "exposed_to_agent": true
+  }
+ ],
+ "learned": [
+  "goal G06 succeeded"
+ ]
+}

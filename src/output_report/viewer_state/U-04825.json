@@ -1,0 +1,94 @@
+{
+ "viewer_id": "U-04825",
+ "arm": "holdout",
+ "facts": {
+  "dialect": {
+   "value": "d7",
+   "source": "app_setting",
+   "as_of": "2026-10-01T07:38:15.001Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting",
+   "as_of": "2026-10-01T07:38:15.001Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 31.6
+  },
+  "push_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 31.6
+  },
+  "whatsapp_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 31.6
+  },
+  "signup_at": {
+   "value": "2025-02-04T15:47:48.175Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 31.6
+  }
+ },
+ "conflicts": [
+  "profile_dialect:d2"
+ ],
+ "goal": null,
+ "goal_history": [
+  {
+   "id": "G05",
+   "name": "first_paid_7d",
+   "started_at": "2026-10-01T07:38:15.001Z",
+   "deadline": "2026-10-08T07:38:15.001Z",
+   "success": {
+    "event": "purchase_completed",
+    "condition": "is_trial = false",
+    "window_hours": 168
+   },
+   "rule_version": "v1",
+   "context": {},
+   "status": "closed_by_purchase",
+   "shadow": true,
+   "evidence": [
+    "subscription:profile"
+   ],
+   "closed_at": "2026-10-01T07:40:32.239Z"
+  }
+ ],
+ "decisions": [
+  "D-0942"
+ ],
+ "actions": [],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-04825",
+   "arm": "holdout",
+   "goal_id": "G05",
+   "started_at": "2026-10-01T07:38:15.001Z",
+   "deadline": "2026-10-08T07:38:15.001Z",
+   "rule_version": "v1",
+   "shadow": true,
+   "primary": true,
+   "goal_status_at_replay_end": "closed_by_purchase",
+   "result": "succeeded",
+   "reason": "purchase_completed seen inside the window",
+   "signal_event_id": "19459b34-097d-49b2-9f1d-eece72667f0b",
+   "signal_at": "2026-10-01T07:40:32.239Z",
+   "exposed_to_agent": false
+  }
+ ],
+ "learned": [
+  "purchase at 2026-10-01T07:40:32.239Z closed goal G05; 0 pending message(s) cancelled; will re-plan",
+  "goal G05 succeeded"
+ ]
+}

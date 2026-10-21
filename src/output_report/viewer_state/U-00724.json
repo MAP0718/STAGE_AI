@@ -1,0 +1,93 @@
+{
+ "viewer_id": "U-00724",
+ "arm": "agent",
+ "facts": {
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "as_of": "2026-10-01T16:24:52.520Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "en",
+   "source": "app_setting",
+   "as_of": "2026-10-01T16:24:52.520Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "trial_active",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 40.4
+  },
+  "push_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 40.4
+  },
+  "whatsapp_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 40.4
+  },
+  "signup_at": {
+   "value": "2026-09-28T04:27:13.984Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 40.4
+  }
+ },
+ "conflicts": [],
+ "goal": {
+  "id": "G04",
+  "name": "trial_to_paid_7d",
+  "started_at": "2026-10-01T15:25:37.353Z",
+  "deadline": "2026-10-08T15:25:37.353Z",
+  "success": {
+   "event": "purchase_completed",
+   "condition": "is_trial = false",
+   "window_hours": 168
+  },
+  "rule_version": "v1",
+  "context": {},
+  "status": "open",
+  "shadow": false,
+  "evidence": [
+   "subscription:profile"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-2252",
+  "D-2253",
+  "D-2263",
+  "D-2450"
+ ],
+ "actions": [
+  "A-1129"
+ ],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-00724",
+   "arm": "agent",
+   "goal_id": "G04",
+   "started_at": "2026-10-01T15:25:37.353Z",
+   "deadline": "2026-10-08T15:25:37.353Z",
+   "rule_version": "v1",
+   "shadow": false,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "failed",
+   "reason": "no purchase_completed inside the window",
+   "signal_event_id": null,
+   "signal_at": null,
+   "exposed_to_agent": true
+  }
+ ],
+ "learned": [
+  "goal G04 failed even though a personalised page/message reached the viewer"
+ ]
+}

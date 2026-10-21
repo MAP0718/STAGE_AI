@@ -1,0 +1,95 @@
+{
+ "viewer_id": "U-01666",
+ "arm": "agent",
+ "facts": {
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "as_of": "2026-10-01T12:53:11.734Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting",
+   "as_of": "2026-10-01T12:53:11.734Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 36.9
+  },
+  "push_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 36.9
+  },
+  "whatsapp_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 36.9
+  },
+  "signup_at": {
+   "value": "2026-09-16T12:47:43.559Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 36.9
+  }
+ },
+ "conflicts": [
+  "profile_dialect:"
+ ],
+ "goal": {
+  "id": "G12",
+  "name": "return_after_absence_7d",
+  "started_at": "2026-10-01T12:53:11.734Z",
+  "deadline": "2026-10-08T12:53:11.734Z",
+  "success": {
+   "event": "play_started",
+   "condition": "any title",
+   "window_hours": 168
+  },
+  "rule_version": "v1",
+  "context": {},
+  "status": "open",
+  "shadow": false,
+  "evidence": [
+   "last app_open:d77eb43e-29a3-4ae2-a7ae-daf60f6a317b",
+   "no app_open in the 14 days before the trigger"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-1620",
+  "D-1621"
+ ],
+ "actions": [
+  "A-0766",
+  "A-0767"
+ ],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-01666",
+   "arm": "agent",
+   "goal_id": "G12",
+   "started_at": "2026-10-01T12:53:11.734Z",
+   "deadline": "2026-10-08T12:53:11.734Z",
+   "rule_version": "v1",
+   "shadow": false,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "succeeded",
+   "reason": "play_started seen inside the window",
+   "signal_event_id": "oua-011242",
+   "signal_at": "2026-10-02T13:36:41.000Z",
+   "exposed_to_agent": true
+  }
+ ],
+ "learned": [
+  "goal G12 succeeded"
+ ]
+}

@@ -1,0 +1,89 @@
+{
+ "viewer_id": "U-03402",
+ "arm": "holdout",
+ "facts": {
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "as_of": "2026-10-01T06:19:53.372Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting",
+   "as_of": "2026-10-01T06:19:53.372Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 30.3
+  },
+  "push_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 30.3
+  },
+  "whatsapp_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 30.3
+  },
+  "signup_at": {
+   "value": "2026-09-10T14:18:39.672Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 30.3
+  }
+ },
+ "conflicts": [],
+ "goal": {
+  "id": "G09",
+  "name": "weekly_habit_14d",
+  "started_at": "2026-10-01T06:19:53.372Z",
+  "deadline": "2026-10-15T06:19:53.372Z",
+  "success": {
+   "event": "play_started",
+   "condition": "on 3 distinct IST days",
+   "window_hours": 336
+  },
+  "rule_version": "v1",
+  "context": {},
+  "status": "open",
+  "shadow": true,
+  "evidence": [
+   "subscription:profile",
+   "plays on 0 day(s) in the last 14 days"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-0781"
+ ],
+ "actions": [],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-03402",
+   "arm": "holdout",
+   "goal_id": "G09",
+   "started_at": "2026-10-01T06:19:53.372Z",
+   "deadline": "2026-10-15T06:19:53.372Z",
+   "rule_version": "v1",
+   "shadow": true,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "failed",
+   "reason": "no play_started inside the window",
+   "signal_event_id": null,
+   "signal_at": null,
+   "exposed_to_agent": false
+  }
+ ],
+ "learned": [
+  "goal G09 failed (no exposure to learn from)"
+ ]
+}

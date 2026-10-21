@@ -1,0 +1,91 @@
+{
+ "viewer_id": "U-03555",
+ "arm": "holdout",
+ "facts": {
+  "dialect": {
+   "value": "d7",
+   "source": "app_setting",
+   "as_of": "2026-10-01T08:56:07.600Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting",
+   "as_of": "2026-10-01T08:56:07.600Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 32.9
+  },
+  "push_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 32.9
+  },
+  "whatsapp_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 32.9
+  },
+  "signup_at": {
+   "value": "2026-08-28T21:43:25.804Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 32.9
+  }
+ },
+ "conflicts": [
+  "profile_dialect:d5"
+ ],
+ "goal": {
+  "id": "G12",
+  "name": "return_after_absence_7d",
+  "started_at": "2026-10-01T08:56:07.600Z",
+  "deadline": "2026-10-08T08:56:07.600Z",
+  "success": {
+   "event": "play_started",
+   "condition": "any title",
+   "window_hours": 168
+  },
+  "rule_version": "v1",
+  "context": {},
+  "status": "open",
+  "shadow": true,
+  "evidence": [
+   "last app_open:b86dd1d9-fb16-4b7d-9718-fe3804755eef",
+   "no app_open in the 14 days before the trigger"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-1110"
+ ],
+ "actions": [],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-03555",
+   "arm": "holdout",
+   "goal_id": "G12",
+   "started_at": "2026-10-01T08:56:07.600Z",
+   "deadline": "2026-10-08T08:56:07.600Z",
+   "rule_version": "v1",
+   "shadow": true,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "failed",
+   "reason": "no play_started inside the window",
+   "signal_event_id": null,
+   "signal_at": null,
+   "exposed_to_agent": false
+  }
+ ],
+ "learned": [
+  "goal G12 failed (no exposure to learn from)"
+ ]
+}

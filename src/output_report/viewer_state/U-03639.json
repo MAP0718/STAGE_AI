@@ -1,0 +1,95 @@
+{
+ "viewer_id": "U-03639",
+ "arm": "agent",
+ "facts": {
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "as_of": "2026-10-01T05:53:02.960Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting",
+   "as_of": "2026-10-01T05:53:02.960Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 29.9
+  },
+  "push_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 29.9
+  },
+  "whatsapp_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 29.9
+  },
+  "signup_at": {
+   "value": "2025-10-09T09:06:34.217Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 29.9
+  }
+ },
+ "conflicts": [
+  "profile_dialect:d6",
+  "campaign_link_dialect:d2"
+ ],
+ "goal": {
+  "id": "G02",
+  "name": "first_full_episode_3d",
+  "started_at": "2026-10-01T05:53:02.960Z",
+  "deadline": "2026-10-04T05:53:02.960Z",
+  "success": {
+   "event": "episode_completed",
+   "condition": "any episode",
+   "window_hours": 72
+  },
+  "rule_version": "v1",
+  "context": {},
+  "status": "open",
+  "shadow": false,
+  "evidence": [
+   "no episode_completed in the 30-day history"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-0727"
+ ],
+ "actions": [
+  "A-0276",
+  "A-0357"
+ ],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-03639",
+   "arm": "agent",
+   "goal_id": "G02",
+   "started_at": "2026-10-01T05:53:02.960Z",
+   "deadline": "2026-10-04T05:53:02.960Z",
+   "rule_version": "v1",
+   "shadow": false,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "failed",
+   "reason": "no episode_completed inside the window",
+   "signal_event_id": null,
+   "signal_at": null,
+   "exposed_to_agent": true
+  }
+ ],
+ "learned": [
+  "title T0001 was withdrawn at 2026-10-01T07:00:00.000Z; live home page republished without it",
+  "goal G02 failed even though a personalised page/message reached the viewer"
+ ]
+}

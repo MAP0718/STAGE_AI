@@ -1,0 +1,94 @@
+{
+ "viewer_id": "U-02167",
+ "arm": "agent",
+ "facts": {
+  "dialect": {
+   "value": "d5",
+   "source": "app_setting",
+   "as_of": "2026-10-01T14:28:54.125Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting",
+   "as_of": "2026-10-01T14:28:54.125Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 38.5
+  },
+  "push_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 38.5
+  },
+  "whatsapp_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 38.5
+  },
+  "signup_at": {
+   "value": "2025-05-09T07:15:19.838Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 38.5
+  }
+ },
+ "conflicts": [],
+ "goal": {
+  "id": "G09",
+  "name": "weekly_habit_14d",
+  "started_at": "2026-09-30T19:57:35.848Z",
+  "deadline": "2026-10-14T19:57:35.848Z",
+  "success": {
+   "event": "play_started",
+   "condition": "on 3 distinct IST days",
+   "window_hours": 336
+  },
+  "rule_version": "v1",
+  "context": {},
+  "status": "open",
+  "shadow": false,
+  "evidence": [
+   "subscription:profile",
+   "plays on 1 day(s) in the last 14 days"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-0033",
+  "D-0329",
+  "D-1909"
+ ],
+ "actions": [
+  "A-0027",
+  "A-0929"
+ ],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-02167",
+   "arm": "agent",
+   "goal_id": "G09",
+   "started_at": "2026-09-30T19:57:35.848Z",
+   "deadline": "2026-10-14T19:57:35.848Z",
+   "rule_version": "v1",
+   "shadow": false,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "failed",
+   "reason": "no play_started inside the window",
+   "signal_event_id": null,
+   "signal_at": null,
+   "exposed_to_agent": true
+  }
+ ],
+ "learned": [
+  "goal G09 failed even though a personalised page/message reached the viewer"
+ ]
+}

@@ -1,0 +1,93 @@
+{
+ "viewer_id": "U-03434",
+ "arm": "holdout",
+ "facts": {
+  "dialect": {
+   "value": "d3",
+   "source": "app_setting",
+   "as_of": "2026-10-01T09:16:17.803Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting",
+   "as_of": "2026-10-01T09:16:17.803Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 33.3
+  },
+  "push_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 33.3
+  },
+  "whatsapp_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 33.3
+  },
+  "signup_at": {
+   "value": "2026-02-10T07:05:28.340Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 33.3
+  }
+ },
+ "conflicts": [],
+ "goal": {
+  "id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T04:48:23.915Z",
+  "deadline": "2026-10-04T04:48:23.915Z",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "rule_version": "v1",
+  "context": {
+   "series_slug": "yane-tegi-d3"
+  },
+  "status": "open",
+  "shadow": true,
+  "evidence": [
+   "event:aa269587-4dc7-49bb-8845-5793f330e3ef",
+   "episodes:yane-tegi-d3"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-0588",
+  "D-1166",
+  "D-1177"
+ ],
+ "actions": [],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-03434",
+   "arm": "holdout",
+   "goal_id": "G07",
+   "started_at": "2026-10-01T04:48:23.915Z",
+   "deadline": "2026-10-04T04:48:23.915Z",
+   "rule_version": "v1",
+   "shadow": true,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "failed",
+   "reason": "no play_started inside the window",
+   "signal_event_id": null,
+   "signal_at": null,
+   "exposed_to_agent": false
+  }
+ ],
+ "learned": [
+  "goal G07 failed (no exposure to learn from)"
+ ]
+}

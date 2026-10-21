@@ -1,0 +1,96 @@
+{
+ "viewer_id": "U-02193",
+ "arm": "agent",
+ "facts": {
+  "dialect": {
+   "value": "d5",
+   "source": "app_setting",
+   "as_of": "2026-10-01T16:45:47.197Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting",
+   "as_of": "2026-10-01T16:45:47.197Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 40.8
+  },
+  "push_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 40.8
+  },
+  "whatsapp_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 40.8
+  },
+  "signup_at": {
+   "value": "2026-09-16T12:56:44.021Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 40.8
+  }
+ },
+ "conflicts": [
+  "profile_dialect:d2"
+ ],
+ "goal": {
+  "id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T16:45:47.197Z",
+  "deadline": "2026-10-04T16:45:47.197Z",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "rule_version": "v1",
+  "context": {
+   "series_slug": "kova-sako-d5"
+  },
+  "status": "open",
+  "shadow": false,
+  "evidence": [
+   "event:d7dae5cc-fb20-4aa8-a563-47106f0e67a3",
+   "episodes:kova-sako-d5"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-2529"
+ ],
+ "actions": [
+  "A-1272",
+  "A-1273"
+ ],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-02193",
+   "arm": "agent",
+   "goal_id": "G07",
+   "started_at": "2026-10-01T16:45:47.197Z",
+   "deadline": "2026-10-04T16:45:47.197Z",
+   "rule_version": "v1",
+   "shadow": false,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "failed",
+   "reason": "no play_started inside the window",
+   "signal_event_id": null,
+   "signal_at": null,
+   "exposed_to_agent": true
+  }
+ ],
+ "learned": [
+  "goal G07 failed even though a personalised page/message reached the viewer"
+ ]
+}

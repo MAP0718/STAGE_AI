@@ -1,0 +1,92 @@
+{
+ "viewer_id": "U-00766",
+ "arm": "holdout",
+ "facts": {
+  "dialect": {
+   "value": "d3",
+   "source": "app_setting",
+   "as_of": "2026-10-01T14:53:24.397Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting",
+   "as_of": "2026-10-01T14:53:24.397Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "active",
+   "source": "event:subscription_renewed",
+   "as_of": "2026-09-08T13:25:17.601Z",
+   "age_hours": 553.5
+  },
+  "push_consent": {
+   "value": false,
+   "source": "no_profile_row",
+   "as_of": null,
+   "age_hours": null
+  },
+  "whatsapp_consent": {
+   "value": false,
+   "source": "no_profile_row",
+   "as_of": null,
+   "age_hours": null
+  },
+  "signup_at": {
+   "value": null,
+   "source": "none",
+   "as_of": null,
+   "age_hours": null
+  }
+ },
+ "conflicts": [],
+ "goal": {
+  "id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T06:33:24.502Z",
+  "deadline": "2026-10-04T06:33:24.502Z",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "rule_version": "v1",
+  "context": {
+   "series_slug": "yatite-roloda-d3"
+  },
+  "status": "open",
+  "shadow": true,
+  "evidence": [
+   "event:af553230-3c4a-4cc9-8d3b-2cb6f680f416",
+   "episodes:yatite-roloda-d3"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-0809",
+  "D-1992"
+ ],
+ "actions": [],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-00766",
+   "arm": "holdout",
+   "goal_id": "G07",
+   "started_at": "2026-10-01T06:33:24.502Z",
+   "deadline": "2026-10-04T06:33:24.502Z",
+   "rule_version": "v1",
+   "shadow": true,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "failed",
+   "reason": "no play_started inside the window",
+   "signal_event_id": null,
+   "signal_at": null,
+   "exposed_to_agent": false
+  }
+ ],
+ "learned": [
+  "goal G07 failed (no exposure to learn from)"
+ ]
+}

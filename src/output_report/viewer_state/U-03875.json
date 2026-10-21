@@ -1,0 +1,94 @@
+{
+ "viewer_id": "U-03875",
+ "arm": "agent",
+ "facts": {
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "as_of": "2026-10-01T14:45:50.181Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting",
+   "as_of": "2026-10-01T14:45:50.181Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 38.8
+  },
+  "push_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 38.8
+  },
+  "whatsapp_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 38.8
+  },
+  "signup_at": {
+   "value": "2026-07-20T21:47:53.646Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 38.8
+  }
+ },
+ "conflicts": [],
+ "goal": {
+  "id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T14:45:50.181Z",
+  "deadline": "2026-10-04T14:45:50.181Z",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "rule_version": "v1",
+  "context": {
+   "series_slug": "hapibha-d1"
+  },
+  "status": "open",
+  "shadow": false,
+  "evidence": [
+   "event:c925289e-f799-42f7-b0df-9508182045d0",
+   "episodes:hapibha-d1"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-1967"
+ ],
+ "actions": [
+  "A-0965",
+  "A-0966"
+ ],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-03875",
+   "arm": "agent",
+   "goal_id": "G07",
+   "started_at": "2026-10-01T14:45:50.181Z",
+   "deadline": "2026-10-04T14:45:50.181Z",
+   "rule_version": "v1",
+   "shadow": false,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "failed",
+   "reason": "no play_started inside the window",
+   "signal_event_id": null,
+   "signal_at": null,
+   "exposed_to_agent": true
+  }
+ ],
+ "learned": [
+  "goal G07 failed even though a personalised page/message reached the viewer"
+ ]
+}

@@ -1,0 +1,96 @@
+{
+ "viewer_id": "U-02139",
+ "arm": "agent",
+ "facts": {
+  "dialect": {
+   "value": "d2",
+   "source": "app_setting",
+   "as_of": "2026-10-01T17:12:02.959Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting",
+   "as_of": "2026-10-01T17:12:02.959Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 41.2
+  },
+  "push_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 41.2
+  },
+  "whatsapp_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 41.2
+  },
+  "signup_at": {
+   "value": "2025-05-01T23:26:09.053Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 41.2
+  }
+ },
+ "conflicts": [
+  "profile_dialect:d1"
+ ],
+ "goal": {
+  "id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T17:12:02.959Z",
+  "deadline": "2026-10-04T17:12:02.959Z",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "rule_version": "v1",
+  "context": {
+   "series_slug": "molo-d2"
+  },
+  "status": "open",
+  "shadow": false,
+  "evidence": [
+   "event:b587e442-a608-4110-9f97-63fa2eadf915",
+   "episodes:molo-d2"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-2615"
+ ],
+ "actions": [
+  "A-1321",
+  "A-1322"
+ ],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-02139",
+   "arm": "agent",
+   "goal_id": "G07",
+   "started_at": "2026-10-01T17:12:02.959Z",
+   "deadline": "2026-10-04T17:12:02.959Z",
+   "rule_version": "v1",
+   "shadow": false,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "failed",
+   "reason": "no play_started inside the window",
+   "signal_event_id": null,
+   "signal_at": null,
+   "exposed_to_agent": true
+  }
+ ],
+ "learned": [
+  "goal G07 failed even though a personalised page/message reached the viewer"
+ ]
+}

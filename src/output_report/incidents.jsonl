@@ -1,0 +1,20 @@
+{"at": "2026-09-30T18:53:43.929Z", "type": "purchase_replan", "viewer_id": "U-04787", "closed_goal": "G06", "messages_cancelled": 0}
+{"at": "2026-10-01T05:28:14.359Z", "type": "purchase_replan", "viewer_id": "U-01703", "closed_goal": "G06", "messages_cancelled": 0}
+{"at": "2026-10-01T06:33:58.504Z", "type": "purchase_replan", "viewer_id": "U-00045", "closed_goal": "G06", "messages_cancelled": 1}
+{"at": "2026-10-01T07:00:00.000Z", "type": "title_withdrawn", "title_id": "T0001", "pending_messages_cancelled": [], "live_pages_republished_for": ["U-00917", "U-01487", "U-01309", "U-02044", "U-01929", "U-03639", "U-04907", "U-03645", "U-04814", "U-04429", "U-00781", "U-02535"], "pages_not_fixable": []}
+{"at": "2026-10-01T07:37:32.152Z", "type": "purchase_replan", "viewer_id": "U-00649", "closed_goal": "G05", "messages_cancelled": 0}
+{"at": "2026-10-01T07:40:32.239Z", "type": "purchase_replan", "viewer_id": "U-04825", "closed_goal": "G05", "messages_cancelled": 0}
+{"at": "2026-10-01T08:30:00.000Z", "type": "goal_rule_corrected", "goal_id": "G03", "new_success": {"event": "play_started", "condition": "on a later IST calendar day within the window"}, "open_goals_updated": 0, "viewers": []}
+{"at": "2026-10-01T08:45:13.367Z", "type": "purchase_replan", "viewer_id": "U-02654", "closed_goal": "G06", "messages_cancelled": 0}
+{"at": "2026-10-01T09:30:04.489Z", "type": "purchase_replan", "viewer_id": "U-03506", "closed_goal": "G06", "messages_cancelled": 0}
+{"at": "2026-10-01T10:35:00.000Z", "type": "dependency_unavailable", "dependency": "model_provider", "until": "2026-10-01T10:42:00.000Z", "detail": "every model call fails with HTTP 503"}
+{"at": "2026-10-01T10:36:57.707Z", "type": "purchase_replan", "viewer_id": "U-01775", "closed_goal": "G06", "messages_cancelled": 1}
+{"at": "2026-10-01T10:47:08.587Z", "type": "purchase_replan", "viewer_id": "U-03356", "closed_goal": "G06", "messages_cancelled": 1}
+{"at": "2026-10-01T12:54:22.923Z", "type": "purchase_replan", "viewer_id": "U-01275", "closed_goal": "G05", "messages_cancelled": 0}
+{"at": "2026-10-01T13:10:00.000Z", "type": "dependency_degraded", "dependency": "user_data_store", "until": "2026-10-01T13:17:00.000Z", "detail": "p95 read latency 8 s and 20% of reads time out"}
+{"at": "2026-10-01T14:06:23.361Z", "type": "purchase_replan", "viewer_id": "U-04240", "closed_goal": "G06", "messages_cancelled": 0}
+{"at": "2026-10-01T15:39:47.083Z", "type": "purchase_replan", "viewer_id": "U-04583", "closed_goal": "G06", "messages_cancelled": 0}
+{"at": "2026-10-01T16:50:55.853Z", "type": "purchase_replan", "viewer_id": "U-02959", "closed_goal": "G06", "messages_cancelled": 0}
+{"action_id": "A-0325", "viewer_id": "U-00045", "reason": "purchase arrived; goal G06 no longer makes sense", "type": "cancelled_action"}
+{"action_id": "A-0602", "viewer_id": "U-01775", "reason": "purchase arrived; goal G06 no longer makes sense", "type": "cancelled_action"}
+{"action_id": "A-0624", "viewer_id": "U-03356", "reason": "purchase arrived; goal G06 no longer makes sense", "type": "cancelled_action"}

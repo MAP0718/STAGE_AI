@@ -1,0 +1,102 @@
+{
+ "viewer_id": "U-04744",
+ "arm": "agent",
+ "facts": {
+  "dialect": {
+   "value": "d3",
+   "source": "app_setting",
+   "as_of": "2026-10-01T16:32:38.164Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting",
+   "as_of": "2026-10-01T16:32:38.164Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "active",
+   "source": "event:purchase_completed",
+   "as_of": "2026-10-01T03:36:18.443Z",
+   "age_hours": 12.9
+  },
+  "push_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 40.5
+  },
+  "whatsapp_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 40.5
+  },
+  "signup_at": {
+   "value": "2025-10-02T09:19:38.261Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 40.5
+  }
+ },
+ "conflicts": [
+  "profile_subscription:never"
+ ],
+ "goal": {
+  "id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T03:34:19.887Z",
+  "deadline": "2026-10-04T03:34:19.887Z",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "rule_version": "v1",
+  "context": {
+   "series_slug": "yatite-roloda-d3"
+  },
+  "status": "open",
+  "shadow": false,
+  "evidence": [
+   "event:38e34f56-e5fa-412d-8bb1-72bfb9a340e9",
+   "episodes:yatite-roloda-d3"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-0254",
+  "D-0330",
+  "D-0333",
+  "D-2458",
+  "D-2486"
+ ],
+ "actions": [
+  "A-0142",
+  "A-0143",
+  "A-1246",
+  "A-1247"
+ ],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-04744",
+   "arm": "agent",
+   "goal_id": "G07",
+   "started_at": "2026-10-01T03:34:19.887Z",
+   "deadline": "2026-10-04T03:34:19.887Z",
+   "rule_version": "v1",
+   "shadow": false,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "failed",
+   "reason": "no play_started inside the window",
+   "signal_event_id": null,
+   "signal_at": null,
+   "exposed_to_agent": true
+  }
+ ],
+ "learned": [
+  "goal G07 failed even though a personalised page/message reached the viewer"
+ ]
+}

@@ -1,0 +1,94 @@
+{
+ "viewer_id": "U-03459",
+ "arm": "agent",
+ "facts": {
+  "dialect": {
+   "value": "d6",
+   "source": "app_setting",
+   "as_of": "2026-10-01T14:51:13.706Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting",
+   "as_of": "2026-10-01T14:51:13.706Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 38.9
+  },
+  "push_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 38.9
+  },
+  "whatsapp_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 38.9
+  },
+  "signup_at": {
+   "value": "2026-09-24T20:44:16.675Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 38.9
+  }
+ },
+ "conflicts": [
+  "profile_dialect:"
+ ],
+ "goal": {
+  "id": "G01",
+  "name": "first_play_24h",
+  "started_at": "2026-10-01T14:51:13.706Z",
+  "deadline": "2026-10-02T14:51:13.706Z",
+  "success": {
+   "event": "play_started",
+   "condition": "any title",
+   "window_hours": 24
+  },
+  "rule_version": "v1",
+  "context": {},
+  "status": "open",
+  "shadow": false,
+  "evidence": [
+   "signup:2026-09-24T20:44:16.675Z",
+   "no play_started in history"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-1985"
+ ],
+ "actions": [
+  "A-0985",
+  "A-0986"
+ ],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-03459",
+   "arm": "agent",
+   "goal_id": "G01",
+   "started_at": "2026-10-01T14:51:13.706Z",
+   "deadline": "2026-10-02T14:51:13.706Z",
+   "rule_version": "v1",
+   "shadow": false,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "failed",
+   "reason": "no play_started inside the window",
+   "signal_event_id": null,
+   "signal_at": null,
+   "exposed_to_agent": true
+  }
+ ],
+ "learned": [
+  "goal G01 failed even though a personalised page/message reached the viewer"
+ ]
+}

@@ -1,0 +1,93 @@
+{
+ "viewer_id": "U-01048",
+ "arm": "agent",
+ "facts": {
+  "dialect": {
+   "value": "d3",
+   "source": "app_setting",
+   "as_of": "2026-10-01T15:00:14.901Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting",
+   "as_of": "2026-10-01T15:00:14.901Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 39.0
+  },
+  "push_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 39.0
+  },
+  "whatsapp_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 39.0
+  },
+  "signup_at": {
+   "value": "2026-06-12T06:17:12.071Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 39.0
+  }
+ },
+ "conflicts": [],
+ "goal": {
+  "id": "G09",
+  "name": "weekly_habit_14d",
+  "started_at": "2026-10-01T11:58:54.057Z",
+  "deadline": "2026-10-15T11:58:54.057Z",
+  "success": {
+   "event": "play_started",
+   "condition": "on 3 distinct IST days",
+   "window_hours": 336
+  },
+  "rule_version": "v1",
+  "context": {},
+  "status": "open",
+  "shadow": false,
+  "evidence": [
+   "subscription:profile",
+   "plays on 1 day(s) in the last 14 days"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-1509",
+  "D-2018"
+ ],
+ "actions": [
+  "A-0705",
+  "A-1004"
+ ],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-01048",
+   "arm": "agent",
+   "goal_id": "G09",
+   "started_at": "2026-10-01T11:58:54.057Z",
+   "deadline": "2026-10-15T11:58:54.057Z",
+   "rule_version": "v1",
+   "shadow": false,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "succeeded",
+   "reason": "play_started seen inside the window",
+   "signal_event_id": "oua-007148",
+   "signal_at": "2026-10-13T13:05:06.000Z",
+   "exposed_to_agent": true
+  }
+ ],
+ "learned": [
+  "goal G09 succeeded"
+ ]
+}

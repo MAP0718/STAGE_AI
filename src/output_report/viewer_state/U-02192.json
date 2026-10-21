@@ -1,0 +1,91 @@
+{
+ "viewer_id": "U-02192",
+ "arm": "holdout",
+ "facts": {
+  "dialect": {
+   "value": "d5",
+   "source": "app_setting",
+   "as_of": "2026-10-01T15:28:25.243Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting",
+   "as_of": "2026-10-01T15:28:25.243Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 39.5
+  },
+  "push_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 39.5
+  },
+  "whatsapp_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 39.5
+  },
+  "signup_at": {
+   "value": "2025-10-15T08:54:11.372Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 39.5
+  }
+ },
+ "conflicts": [],
+ "goal": {
+  "id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T15:28:25.243Z",
+  "deadline": "2026-10-04T15:28:25.243Z",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "rule_version": "v1",
+  "context": {
+   "series_slug": "gubava-gihaya-d5"
+  },
+  "status": "open",
+  "shadow": true,
+  "evidence": [
+   "event:bb4acb80-192c-442b-9e1d-4fda9239c7f6",
+   "episodes:gubava-gihaya-d5"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-2264"
+ ],
+ "actions": [],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-02192",
+   "arm": "holdout",
+   "goal_id": "G07",
+   "started_at": "2026-10-01T15:28:25.243Z",
+   "deadline": "2026-10-04T15:28:25.243Z",
+   "rule_version": "v1",
+   "shadow": true,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "failed",
+   "reason": "no play_started inside the window",
+   "signal_event_id": null,
+   "signal_at": null,
+   "exposed_to_agent": false
+  }
+ ],
+ "learned": [
+  "goal G07 failed (no exposure to learn from)"
+ ]
+}

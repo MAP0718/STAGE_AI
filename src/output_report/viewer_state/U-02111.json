@@ -1,0 +1,94 @@
+{
+ "viewer_id": "U-02111",
+ "arm": "agent",
+ "facts": {
+  "dialect": {
+   "value": "d5",
+   "source": "app_setting",
+   "as_of": "2026-10-01T04:35:16.830Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting",
+   "as_of": "2026-10-01T04:35:16.830Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 28.6
+  },
+  "push_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 28.6
+  },
+  "whatsapp_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 28.6
+  },
+  "signup_at": {
+   "value": "2025-06-05T02:31:34.105Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 28.6
+  }
+ },
+ "conflicts": [],
+ "goal": {
+  "id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T04:35:16.830Z",
+  "deadline": "2026-10-04T04:35:16.830Z",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "rule_version": "v1",
+  "context": {
+   "series_slug": "jamo-hasa-d5"
+  },
+  "status": "open",
+  "shadow": false,
+  "evidence": [
+   "event:e7e18f53-dff4-4e6a-802f-5dc06f5006c2",
+   "episodes:jamo-hasa-d5"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-0344"
+ ],
+ "actions": [
+  "A-0188",
+  "A-0189"
+ ],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-02111",
+   "arm": "agent",
+   "goal_id": "G07",
+   "started_at": "2026-10-01T04:35:16.830Z",
+   "deadline": "2026-10-04T04:35:16.830Z",
+   "rule_version": "v1",
+   "shadow": false,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "failed",
+   "reason": "no play_started inside the window",
+   "signal_event_id": null,
+   "signal_at": null,
+   "exposed_to_agent": true
+  }
+ ],
+ "learned": [
+  "goal G07 failed even though a personalised page/message reached the viewer"
+ ]
+}

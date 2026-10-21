@@ -1,0 +1,92 @@
+{
+ "viewer_id": "U-00773",
+ "arm": "agent",
+ "facts": {
+  "dialect": {
+   "value": "",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 35.9
+  },
+  "language": {
+   "value": "hin",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 35.9
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 35.9
+  },
+  "push_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 35.9
+  },
+  "whatsapp_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 35.9
+  },
+  "signup_at": {
+   "value": "2026-02-20T15:03:23.600Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 35.9
+  }
+ },
+ "conflicts": [],
+ "goal": {
+  "id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T05:47:53.641Z",
+  "deadline": "2026-10-04T05:47:53.641Z",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "rule_version": "v1",
+  "context": {
+   "series_slug": "molo-d2"
+  },
+  "status": "open",
+  "shadow": false,
+  "evidence": [
+   "event:ebe28d1b-3a7d-4c8e-a8d1-cf6cbe1a2967",
+   "episodes:molo-d2"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-0712",
+  "D-1487"
+ ],
+ "actions": [],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-00773",
+   "arm": "agent",
+   "goal_id": "G07",
+   "started_at": "2026-10-01T05:47:53.641Z",
+   "deadline": "2026-10-04T05:47:53.641Z",
+   "rule_version": "v1",
+   "shadow": false,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "failed",
+   "reason": "no play_started inside the window",
+   "signal_event_id": null,
+   "signal_at": null,
+   "exposed_to_agent": false
+  }
+ ],
+ "learned": [
+  "goal G07 failed (no exposure to learn from)"
+ ]
+}

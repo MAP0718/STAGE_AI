@@ -1,0 +1,92 @@
+{
+ "viewer_id": "U-00647",
+ "arm": "agent",
+ "facts": {
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "as_of": "2026-10-01T04:28:35.213Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting",
+   "as_of": "2026-10-01T04:28:35.213Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 28.5
+  },
+  "push_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 28.5
+  },
+  "whatsapp_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 28.5
+  },
+  "signup_at": {
+   "value": "2026-02-28T06:34:38.437Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 28.5
+  }
+ },
+ "conflicts": [
+  "profile_dialect:d3"
+ ],
+ "goal": {
+  "id": "G08",
+  "name": "try_new_release_7d",
+  "started_at": "2026-10-01T04:28:35.213Z",
+  "deadline": "2026-10-08T04:28:35.213Z",
+  "success": {
+   "event": "play_started",
+   "condition": "a title released in the 30 days before the goal start",
+   "window_hours": 168
+  },
+  "rule_version": "v1",
+  "context": {},
+  "status": "open",
+  "shadow": false,
+  "evidence": [
+   "subscription:profile"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-0328"
+ ],
+ "actions": [
+  "A-0180"
+ ],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-00647",
+   "arm": "agent",
+   "goal_id": "G08",
+   "started_at": "2026-10-01T04:28:35.213Z",
+   "deadline": "2026-10-08T04:28:35.213Z",
+   "rule_version": "v1",
+   "shadow": false,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "succeeded",
+   "reason": "play_started seen inside the window",
+   "signal_event_id": "oua-004272",
+   "signal_at": "2026-10-01T04:33:27.213Z",
+   "exposed_to_agent": true
+  }
+ ],
+ "learned": [
+  "goal G08 succeeded"
+ ]
+}

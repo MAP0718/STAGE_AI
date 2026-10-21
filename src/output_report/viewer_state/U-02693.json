@@ -1,0 +1,91 @@
+{
+ "viewer_id": "U-02693",
+ "arm": "holdout",
+ "facts": {
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "as_of": "2026-10-01T02:58:00.124Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting",
+   "as_of": "2026-10-01T02:58:00.124Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "active",
+   "source": "event:subscription_renewed",
+   "as_of": "2026-09-21T15:08:50.716Z",
+   "age_hours": 227.8
+  },
+  "push_consent": {
+   "value": false,
+   "source": "no_profile_row",
+   "as_of": null,
+   "age_hours": null
+  },
+  "whatsapp_consent": {
+   "value": false,
+   "source": "no_profile_row",
+   "as_of": null,
+   "age_hours": null
+  },
+  "signup_at": {
+   "value": null,
+   "source": "none",
+   "as_of": null,
+   "age_hours": null
+  }
+ },
+ "conflicts": [],
+ "goal": {
+  "id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T02:58:00.124Z",
+  "deadline": "2026-10-04T02:58:00.124Z",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "rule_version": "v1",
+  "context": {
+   "series_slug": "hapibha-d1"
+  },
+  "status": "open",
+  "shadow": true,
+  "evidence": [
+   "event:aca4c93c-d4d3-4241-a259-54f2730d0ef2",
+   "episodes:hapibha-d1"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-0196"
+ ],
+ "actions": [],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-02693",
+   "arm": "holdout",
+   "goal_id": "G07",
+   "started_at": "2026-10-01T02:58:00.124Z",
+   "deadline": "2026-10-04T02:58:00.124Z",
+   "rule_version": "v1",
+   "shadow": true,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "failed",
+   "reason": "no play_started inside the window",
+   "signal_event_id": null,
+   "signal_at": null,
+   "exposed_to_agent": false
+  }
+ ],
+ "learned": [
+  "goal G07 failed (no exposure to learn from)"
+ ]
+}

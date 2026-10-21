@@ -1,0 +1,138 @@
+{
+ "viewer_id": "U-00294",
+ "arm": "agent",
+ "facts": {
+  "dialect": {
+   "value": "d3",
+   "source": "app_setting",
+   "as_of": "2026-10-01T15:26:16.025Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting",
+   "as_of": "2026-10-01T15:26:16.025Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 39.4
+  },
+  "push_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 39.4
+  },
+  "whatsapp_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 39.4
+  },
+  "signup_at": {
+   "value": "2025-01-05T18:12:08.191Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 39.4
+  }
+ },
+ "conflicts": [
+  "profile_dialect:d1"
+ ],
+ "goal": {
+  "id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T15:26:16.025Z",
+  "deadline": "2026-10-04T15:26:16.025Z",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "rule_version": "v1",
+  "context": {
+   "series_slug": "yane-tegi-d3"
+  },
+  "status": "open",
+  "shadow": false,
+  "evidence": [
+   "event:273af919-a1e5-4d39-9809-8657737be727",
+   "episodes:yane-tegi-d3"
+  ]
+ },
+ "goal_history": [
+  {
+   "id": "G12",
+   "name": "return_after_absence_7d",
+   "started_at": "2026-10-01T09:23:15.867Z",
+   "deadline": "2026-10-08T09:23:15.867Z",
+   "success": {
+    "event": "play_started",
+    "condition": "any title",
+    "window_hours": 168
+   },
+   "rule_version": "v1",
+   "context": {},
+   "status": "no_longer_eligible",
+   "shadow": false,
+   "evidence": [
+    "last app_open:29458ab0-012e-4b98-b591-0b256ab933bb",
+    "no app_open in the 14 days before the trigger"
+   ]
+  }
+ ],
+ "decisions": [
+  "D-1179",
+  "D-1870",
+  "D-2256"
+ ],
+ "actions": [
+  "A-0538",
+  "A-0539",
+  "A-1130",
+  "A-1131"
+ ],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-00294",
+   "arm": "agent",
+   "goal_id": "G12",
+   "started_at": "2026-10-01T09:23:15.867Z",
+   "deadline": "2026-10-08T09:23:15.867Z",
+   "rule_version": "v1",
+   "shadow": false,
+   "primary": true,
+   "goal_status_at_replay_end": "no_longer_eligible",
+   "result": "succeeded",
+   "reason": "play_started seen inside the window",
+   "signal_event_id": "oua-002083",
+   "signal_at": "2026-10-01T09:26:00.867Z",
+   "exposed_to_agent": true
+  },
+  {
+   "viewer_id": "U-00294",
+   "arm": "agent",
+   "goal_id": "G07",
+   "started_at": "2026-10-01T15:26:16.025Z",
+   "deadline": "2026-10-04T15:26:16.025Z",
+   "rule_version": "v1",
+   "shadow": false,
+   "primary": false,
+   "goal_status_at_replay_end": "open",
+   "result": "failed",
+   "reason": "no play_started inside the window",
+   "signal_event_id": null,
+   "signal_at": null,
+   "exposed_to_agent": true
+  }
+ ],
+ "learned": [
+  "goal G12 retired: no_longer_eligible",
+  "goal G12 succeeded",
+  "goal G07 failed even though a personalised page/message reached the viewer"
+ ]
+}

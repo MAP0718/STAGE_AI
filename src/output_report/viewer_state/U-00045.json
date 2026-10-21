@@ -1,0 +1,100 @@
+{
+ "viewer_id": "U-00045",
+ "arm": "agent",
+ "facts": {
+  "dialect": {
+   "value": "d3",
+   "source": "app_setting",
+   "as_of": "2026-10-01T06:31:41.593Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting",
+   "as_of": "2026-10-01T06:31:41.593Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "lapsed",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 30.5
+  },
+  "push_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 30.5
+  },
+  "whatsapp_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 30.5
+  },
+  "signup_at": {
+   "value": "2025-04-12T02:54:21.942Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 30.5
+  }
+ },
+ "conflicts": [],
+ "goal": null,
+ "goal_history": [
+  {
+   "id": "G06",
+   "name": "reactivate_lapsed_14d",
+   "started_at": "2026-10-01T06:31:41.593Z",
+   "deadline": "2026-10-15T06:31:41.593Z",
+   "success": {
+    "event": "purchase_completed",
+    "condition": "any paid plan",
+    "window_hours": 336
+   },
+   "rule_version": "v1",
+   "context": {},
+   "status": "closed_by_purchase",
+   "shadow": false,
+   "evidence": [
+    "subscription:profile"
+   ],
+   "closed_at": "2026-10-01T06:33:58.504Z"
+  }
+ ],
+ "decisions": [
+  "D-0803"
+ ],
+ "actions": [
+  "A-0324",
+  "A-0325"
+ ],
+ "cancelled_actions": [
+  {
+   "action_id": "A-0325",
+   "reason": "purchase arrived; goal G06 no longer makes sense"
+  }
+ ],
+ "outcomes": [
+  {
+   "viewer_id": "U-00045",
+   "arm": "agent",
+   "goal_id": "G06",
+   "started_at": "2026-10-01T06:31:41.593Z",
+   "deadline": "2026-10-15T06:31:41.593Z",
+   "rule_version": "v1",
+   "shadow": false,
+   "primary": true,
+   "goal_status_at_replay_end": "closed_by_purchase",
+   "result": "succeeded",
+   "reason": "purchase_completed seen inside the window",
+   "signal_event_id": "173fc778-f125-43fa-a3c7-1e4fa9115893",
+   "signal_at": "2026-10-01T06:33:58.504Z",
+   "exposed_to_agent": true
+  }
+ ],
+ "learned": [
+  "purchase at 2026-10-01T06:33:58.504Z closed goal G06; 1 pending message(s) cancelled; will re-plan",
+  "goal G06 succeeded"
+ ]
+}

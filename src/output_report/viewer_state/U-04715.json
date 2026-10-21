@@ -1,0 +1,94 @@
+{
+ "viewer_id": "U-04715",
+ "arm": "agent",
+ "facts": {
+  "dialect": {
+   "value": "d4",
+   "source": "app_setting",
+   "as_of": "2026-10-01T17:51:06.603Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting",
+   "as_of": "2026-10-01T17:51:06.603Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 41.9
+  },
+  "push_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 41.9
+  },
+  "whatsapp_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 41.9
+  },
+  "signup_at": {
+   "value": "2024-11-30T06:20:11.692Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 41.9
+  }
+ },
+ "conflicts": [],
+ "goal": {
+  "id": "G08",
+  "name": "try_new_release_7d",
+  "started_at": "2026-10-01T09:15:52.443Z",
+  "deadline": "2026-10-08T09:15:52.443Z",
+  "success": {
+   "event": "play_started",
+   "condition": "a title released in the 30 days before the goal start",
+   "window_hours": 168
+  },
+  "rule_version": "v1",
+  "context": {},
+  "status": "open",
+  "shadow": false,
+  "evidence": [
+   "subscription:profile"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-1165",
+  "D-1490",
+  "D-2712"
+ ],
+ "actions": [
+  "A-0530",
+  "A-0695",
+  "A-1358"
+ ],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-04715",
+   "arm": "agent",
+   "goal_id": "G08",
+   "started_at": "2026-10-01T09:15:52.443Z",
+   "deadline": "2026-10-08T09:15:52.443Z",
+   "rule_version": "v1",
+   "shadow": false,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "failed",
+   "reason": "no play_started inside the window",
+   "signal_event_id": null,
+   "signal_at": null,
+   "exposed_to_agent": true
+  }
+ ],
+ "learned": [
+  "goal G08 failed even though a personalised page/message reached the viewer"
+ ]
+}

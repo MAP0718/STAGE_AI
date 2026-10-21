@@ -1,0 +1,91 @@
+{
+ "viewer_id": "U-04243",
+ "arm": "holdout",
+ "facts": {
+  "dialect": {
+   "value": "d7",
+   "source": "app_setting",
+   "as_of": "2026-10-01T08:56:52.682Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting",
+   "as_of": "2026-10-01T08:56:52.682Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 32.9
+  },
+  "push_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 32.9
+  },
+  "whatsapp_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 32.9
+  },
+  "signup_at": {
+   "value": "2026-03-31T23:24:33.029Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 32.9
+  }
+ },
+ "conflicts": [],
+ "goal": {
+  "id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T08:56:52.682Z",
+  "deadline": "2026-10-04T08:56:52.682Z",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "rule_version": "v1",
+  "context": {
+   "series_slug": "gima-bhadaba-d1"
+  },
+  "status": "open",
+  "shadow": true,
+  "evidence": [
+   "event:4ff22e87-9f69-489b-8212-28accd3e68ca",
+   "episodes:gima-bhadaba-d1"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-1111"
+ ],
+ "actions": [],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-04243",
+   "arm": "holdout",
+   "goal_id": "G07",
+   "started_at": "2026-10-01T08:56:52.682Z",
+   "deadline": "2026-10-04T08:56:52.682Z",
+   "rule_version": "v1",
+   "shadow": true,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "failed",
+   "reason": "no play_started inside the window",
+   "signal_event_id": null,
+   "signal_at": null,
+   "exposed_to_agent": false
+  }
+ ],
+ "learned": [
+  "goal G07 failed (no exposure to learn from)"
+ ]
+}

@@ -1,0 +1,132 @@
+{
+ "viewer_id": "U-01940",
+ "arm": "agent",
+ "facts": {
+  "dialect": {
+   "value": "d2",
+   "source": "app_setting",
+   "as_of": "2026-10-01T12:11:42.692Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting",
+   "as_of": "2026-10-01T12:11:42.692Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 36.2
+  },
+  "push_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 36.2
+  },
+  "whatsapp_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 36.2
+  },
+  "signup_at": {
+   "value": "2026-03-29T16:20:39.252Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 36.2
+  }
+ },
+ "conflicts": [
+  "profile_dialect:d6"
+ ],
+ "goal": {
+  "id": "G02",
+  "name": "first_full_episode_3d",
+  "started_at": "2026-10-01T12:11:42.692Z",
+  "deadline": "2026-10-04T12:11:42.692Z",
+  "success": {
+   "event": "episode_completed",
+   "condition": "any episode",
+   "window_hours": 72
+  },
+  "rule_version": "v1",
+  "context": {},
+  "status": "open",
+  "shadow": false,
+  "evidence": [
+   "no episode_completed in the 30-day history"
+  ]
+ },
+ "goal_history": [
+  {
+   "id": "G12",
+   "name": "return_after_absence_7d",
+   "started_at": "2026-10-01T06:45:36.783Z",
+   "deadline": "2026-10-08T06:45:36.783Z",
+   "success": {
+    "event": "play_started",
+    "condition": "any title",
+    "window_hours": 168
+   },
+   "rule_version": "v1",
+   "context": {},
+   "status": "no_longer_eligible",
+   "shadow": false,
+   "evidence": [
+    "last app_open:f1d102b3-445b-4ee5-98c9-fdc883b56579",
+    "no app_open in the 14 days before the trigger"
+   ]
+  }
+ ],
+ "decisions": [
+  "D-0833",
+  "D-1537"
+ ],
+ "actions": [
+  "A-0346",
+  "A-0721"
+ ],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-01940",
+   "arm": "agent",
+   "goal_id": "G12",
+   "started_at": "2026-10-01T06:45:36.783Z",
+   "deadline": "2026-10-08T06:45:36.783Z",
+   "rule_version": "v1",
+   "shadow": false,
+   "primary": true,
+   "goal_status_at_replay_end": "no_longer_eligible",
+   "result": "failed",
+   "reason": "no play_started inside the window",
+   "signal_event_id": null,
+   "signal_at": null,
+   "exposed_to_agent": true
+  },
+  {
+   "viewer_id": "U-01940",
+   "arm": "agent",
+   "goal_id": "G02",
+   "started_at": "2026-10-01T12:11:42.692Z",
+   "deadline": "2026-10-04T12:11:42.692Z",
+   "rule_version": "v1",
+   "shadow": false,
+   "primary": false,
+   "goal_status_at_replay_end": "open",
+   "result": "failed",
+   "reason": "no episode_completed inside the window",
+   "signal_event_id": null,
+   "signal_at": null,
+   "exposed_to_agent": true
+  }
+ ],
+ "learned": [
+  "goal G12 retired: no_longer_eligible",
+  "goal G12 failed even though a personalised page/message reached the viewer",
+  "goal G02 failed even though a personalised page/message reached the viewer"
+ ]
+}

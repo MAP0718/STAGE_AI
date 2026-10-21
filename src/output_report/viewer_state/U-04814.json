@@ -1,0 +1,96 @@
+{
+ "viewer_id": "U-04814",
+ "arm": "agent",
+ "facts": {
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "as_of": "2026-10-01T16:47:41.791Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting",
+   "as_of": "2026-10-01T16:47:41.791Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 40.8
+  },
+  "push_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 40.8
+  },
+  "whatsapp_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 40.8
+  },
+  "signup_at": {
+   "value": "2025-10-05T00:24:51.937Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 40.8
+  }
+ },
+ "conflicts": [],
+ "goal": {
+  "id": "G02",
+  "name": "first_full_episode_3d",
+  "started_at": "2026-10-01T00:54:14.335Z",
+  "deadline": "2026-10-04T00:54:14.335Z",
+  "success": {
+   "event": "episode_completed",
+   "condition": "any episode",
+   "window_hours": 72
+  },
+  "rule_version": "v1",
+  "context": {},
+  "status": "open",
+  "shadow": false,
+  "evidence": [
+   "no episode_completed in the 30-day history"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-0093",
+  "D-0779",
+  "D-2535"
+ ],
+ "actions": [
+  "A-0059",
+  "A-0313",
+  "A-0360",
+  "A-1276"
+ ],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-04814",
+   "arm": "agent",
+   "goal_id": "G02",
+   "started_at": "2026-10-01T00:54:14.335Z",
+   "deadline": "2026-10-04T00:54:14.335Z",
+   "rule_version": "v1",
+   "shadow": false,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "succeeded",
+   "reason": "episode_completed seen inside the window",
+   "signal_event_id": "oua-030699",
+   "signal_at": "2026-10-01T17:04:02.791Z",
+   "exposed_to_agent": true
+  }
+ ],
+ "learned": [
+  "title T0001 was withdrawn at 2026-10-01T07:00:00.000Z; live home page republished without it",
+  "goal G02 succeeded"
+ ]
+}

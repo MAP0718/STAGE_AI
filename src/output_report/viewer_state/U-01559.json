@@ -1,0 +1,96 @@
+{
+ "viewer_id": "U-01559",
+ "arm": "agent",
+ "facts": {
+  "dialect": {
+   "value": "d4",
+   "source": "app_setting",
+   "as_of": "2026-10-01T17:04:22.184Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting",
+   "as_of": "2026-10-01T17:04:22.184Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "lapsed",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 41.1
+  },
+  "push_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 41.1
+  },
+  "whatsapp_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 41.1
+  },
+  "signup_at": {
+   "value": "2025-10-22T16:46:38.458Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 41.1
+  }
+ },
+ "conflicts": [],
+ "goal": {
+  "id": "G06",
+  "name": "reactivate_lapsed_14d",
+  "started_at": "2026-10-01T07:30:10.402Z",
+  "deadline": "2026-10-15T07:30:10.402Z",
+  "success": {
+   "event": "purchase_completed",
+   "condition": "any paid plan",
+   "window_hours": 336
+  },
+  "rule_version": "v1",
+  "context": {},
+  "status": "open",
+  "shadow": false,
+  "evidence": [
+   "subscription:profile"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-0923",
+  "D-1651",
+  "D-2594"
+ ],
+ "actions": [
+  "A-0407",
+  "A-0408",
+  "A-0780",
+  "A-1307",
+  "A-1308"
+ ],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-01559",
+   "arm": "agent",
+   "goal_id": "G06",
+   "started_at": "2026-10-01T07:30:10.402Z",
+   "deadline": "2026-10-15T07:30:10.402Z",
+   "rule_version": "v1",
+   "shadow": false,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "succeeded",
+   "reason": "purchase_completed seen inside the window",
+   "signal_event_id": "oua-010695",
+   "signal_at": "2026-10-01T13:23:58.563Z",
+   "exposed_to_agent": true
+  }
+ ],
+ "learned": [
+  "goal G06 succeeded"
+ ]
+}

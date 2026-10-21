@@ -1,0 +1,96 @@
+{
+ "viewer_id": "U-03017",
+ "arm": "agent",
+ "facts": {
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "as_of": "2026-10-01T12:10:50.219Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "en",
+   "source": "app_setting",
+   "as_of": "2026-10-01T12:10:50.219Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 36.2
+  },
+  "push_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 36.2
+  },
+  "whatsapp_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 36.2
+  },
+  "signup_at": {
+   "value": "2026-09-29T02:24:58.925Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 36.2
+  }
+ },
+ "conflicts": [
+  "profile_dialect:"
+ ],
+ "goal": {
+  "id": "G09",
+  "name": "weekly_habit_14d",
+  "started_at": "2026-10-01T02:47:33.299Z",
+  "deadline": "2026-10-15T02:47:33.299Z",
+  "success": {
+   "event": "play_started",
+   "condition": "on 3 distinct IST days",
+   "window_hours": 336
+  },
+  "rule_version": "v1",
+  "context": {},
+  "status": "open",
+  "shadow": false,
+  "evidence": [
+   "subscription:profile",
+   "plays on 1 day(s) in the last 14 days"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-0184",
+  "D-1340",
+  "D-1533"
+ ],
+ "actions": [
+  "A-0112",
+  "A-0625"
+ ],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-03017",
+   "arm": "agent",
+   "goal_id": "G09",
+   "started_at": "2026-10-01T02:47:33.299Z",
+   "deadline": "2026-10-15T02:47:33.299Z",
+   "rule_version": "v1",
+   "shadow": false,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "succeeded",
+   "reason": "play_started seen inside the window",
+   "signal_event_id": "oua-019145",
+   "signal_at": "2026-10-04T03:50:41.000Z",
+   "exposed_to_agent": true
+  }
+ ],
+ "learned": [
+  "goal G09 succeeded"
+ ]
+}

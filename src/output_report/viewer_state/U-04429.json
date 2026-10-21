@@ -1,0 +1,99 @@
+{
+ "viewer_id": "U-04429",
+ "arm": "agent",
+ "facts": {
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "as_of": "2026-10-01T06:25:02.174Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "en",
+   "source": "app_setting",
+   "as_of": "2026-10-01T06:25:02.174Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 30.4
+  },
+  "push_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 30.4
+  },
+  "whatsapp_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 30.4
+  },
+  "signup_at": {
+   "value": "2025-01-21T08:35:19.513Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 30.4
+  }
+ },
+ "conflicts": [
+  "profile_dialect:d5",
+  "campaign_link_dialect:d6"
+ ],
+ "goal": {
+  "id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T06:25:02.174Z",
+  "deadline": "2026-10-04T06:25:02.174Z",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "rule_version": "v1",
+  "context": {
+   "series_slug": "bagugu-gigupi-d1"
+  },
+  "status": "open",
+  "shadow": false,
+  "evidence": [
+   "event:5093590b-91fa-4ad9-8403-cf801f32ae6d",
+   "episodes:bagugu-gigupi-d1"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-0789"
+ ],
+ "actions": [
+  "A-0314",
+  "A-0315",
+  "A-0361"
+ ],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-04429",
+   "arm": "agent",
+   "goal_id": "G07",
+   "started_at": "2026-10-01T06:25:02.174Z",
+   "deadline": "2026-10-04T06:25:02.174Z",
+   "rule_version": "v1",
+   "shadow": false,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "failed",
+   "reason": "no play_started inside the window",
+   "signal_event_id": null,
+   "signal_at": null,
+   "exposed_to_agent": true
+  }
+ ],
+ "learned": [
+  "title T0001 was withdrawn at 2026-10-01T07:00:00.000Z; live home page republished without it",
+  "goal G07 failed even though a personalised page/message reached the viewer"
+ ]
+}

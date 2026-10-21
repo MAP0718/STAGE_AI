@@ -1,0 +1,96 @@
+{
+ "viewer_id": "U-02918",
+ "arm": "agent",
+ "facts": {
+  "dialect": {
+   "value": "d2",
+   "source": "app_setting",
+   "as_of": "2026-10-01T10:11:30.462Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting",
+   "as_of": "2026-10-01T10:11:30.462Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 34.2
+  },
+  "push_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 34.2
+  },
+  "whatsapp_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 34.2
+  },
+  "signup_at": {
+   "value": "2025-09-19T12:38:57.499Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 34.2
+  }
+ },
+ "conflicts": [
+  "profile_dialect:d3"
+ ],
+ "goal": {
+  "id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T10:11:30.462Z",
+  "deadline": "2026-10-04T10:11:30.462Z",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "rule_version": "v1",
+  "context": {
+   "series_slug": "dhapipa-gini-d2"
+  },
+  "status": "open",
+  "shadow": false,
+  "evidence": [
+   "event:89f8eb9b-6fda-4bb0-bd44-3cde12215d07",
+   "episodes:dhapipa-gini-d2"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-1278"
+ ],
+ "actions": [
+  "A-0581",
+  "A-0582"
+ ],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-02918",
+   "arm": "agent",
+   "goal_id": "G07",
+   "started_at": "2026-10-01T10:11:30.462Z",
+   "deadline": "2026-10-04T10:11:30.462Z",
+   "rule_version": "v1",
+   "shadow": false,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "succeeded",
+   "reason": "play_started seen inside the window",
+   "signal_event_id": "oua-018522",
+   "signal_at": "2026-10-01T10:14:48.462Z",
+   "exposed_to_agent": true
+  }
+ ],
+ "learned": [
+  "goal G07 succeeded"
+ ]
+}

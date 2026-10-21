@@ -1,0 +1,92 @@
+{
+ "viewer_id": "U-02959",
+ "arm": "holdout",
+ "facts": {
+  "dialect": {
+   "value": "d6",
+   "source": "app_setting",
+   "as_of": "2026-10-01T16:49:04.711Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting",
+   "as_of": "2026-10-01T16:49:04.711Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "lapsed",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 40.8
+  },
+  "push_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 40.8
+  },
+  "whatsapp_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 40.8
+  },
+  "signup_at": {
+   "value": "2026-06-29T10:57:08.373Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 40.8
+  }
+ },
+ "conflicts": [],
+ "goal": null,
+ "goal_history": [
+  {
+   "id": "G06",
+   "name": "reactivate_lapsed_14d",
+   "started_at": "2026-10-01T16:49:04.711Z",
+   "deadline": "2026-10-15T16:49:04.711Z",
+   "success": {
+    "event": "purchase_completed",
+    "condition": "any paid plan",
+    "window_hours": 336
+   },
+   "rule_version": "v1",
+   "context": {},
+   "status": "closed_by_purchase",
+   "shadow": true,
+   "evidence": [
+    "subscription:profile"
+   ],
+   "closed_at": "2026-10-01T16:50:55.853Z"
+  }
+ ],
+ "decisions": [
+  "D-2544"
+ ],
+ "actions": [],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-02959",
+   "arm": "holdout",
+   "goal_id": "G06",
+   "started_at": "2026-10-01T16:49:04.711Z",
+   "deadline": "2026-10-15T16:49:04.711Z",
+   "rule_version": "v1",
+   "shadow": true,
+   "primary": true,
+   "goal_status_at_replay_end": "closed_by_purchase",
+   "result": "succeeded",
+   "reason": "purchase_completed seen inside the window",
+   "signal_event_id": "9869ce80-5d2d-4884-b6c3-dac91d450fa0",
+   "signal_at": "2026-10-01T16:50:55.853Z",
+   "exposed_to_agent": false
+  }
+ ],
+ "learned": [
+  "purchase at 2026-10-01T16:50:55.853Z closed goal G06; 0 pending message(s) cancelled; will re-plan",
+  "goal G06 succeeded"
+ ]
+}

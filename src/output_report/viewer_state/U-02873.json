@@ -1,0 +1,96 @@
+{
+ "viewer_id": "U-02873",
+ "arm": "agent",
+ "facts": {
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "as_of": "2026-10-01T07:49:28.936Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting",
+   "as_of": "2026-10-01T07:49:28.936Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 31.8
+  },
+  "push_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 31.8
+  },
+  "whatsapp_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 31.8
+  },
+  "signup_at": {
+   "value": "2025-12-04T00:32:24.393Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 31.8
+  }
+ },
+ "conflicts": [
+  "campaign_link_dialect:d5"
+ ],
+ "goal": {
+  "id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T07:49:28.936Z",
+  "deadline": "2026-10-04T07:49:28.936Z",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "rule_version": "v1",
+  "context": {
+   "series_slug": "labha-d1"
+  },
+  "status": "open",
+  "shadow": false,
+  "evidence": [
+   "event:91357715-c046-405b-bc6b-e48f1c866d5f",
+   "episodes:labha-d1"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-0973"
+ ],
+ "actions": [
+  "A-0431",
+  "A-0432"
+ ],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-02873",
+   "arm": "agent",
+   "goal_id": "G07",
+   "started_at": "2026-10-01T07:49:28.936Z",
+   "deadline": "2026-10-04T07:49:28.936Z",
+   "rule_version": "v1",
+   "shadow": false,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "failed",
+   "reason": "no play_started inside the window",
+   "signal_event_id": null,
+   "signal_at": null,
+   "exposed_to_agent": true
+  }
+ ],
+ "learned": [
+  "goal G07 failed even though a personalised page/message reached the viewer"
+ ]
+}

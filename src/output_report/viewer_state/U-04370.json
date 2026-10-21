@@ -1,0 +1,92 @@
+{
+ "viewer_id": "U-04370",
+ "arm": "holdout",
+ "facts": {
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "as_of": "2026-09-30T21:31:48.758Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "en",
+   "source": "app_setting",
+   "as_of": "2026-09-30T21:31:48.758Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 21.5
+  },
+  "push_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 21.5
+  },
+  "whatsapp_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 21.5
+  },
+  "signup_at": {
+   "value": "2025-04-03T13:24:57.506Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 21.5
+  }
+ },
+ "conflicts": [],
+ "goal": {
+  "id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-09-30T21:31:48.758Z",
+  "deadline": "2026-10-03T21:31:48.758Z",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "rule_version": "v1",
+  "context": {
+   "series_slug": "bagugu-gigupi-d1"
+  },
+  "status": "open",
+  "shadow": true,
+  "evidence": [
+   "event:babc3a97-f133-4b9f-b02f-858f6d5c8854",
+   "episodes:bagugu-gigupi-d1"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-0049",
+  "D-0050"
+ ],
+ "actions": [],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-04370",
+   "arm": "holdout",
+   "goal_id": "G07",
+   "started_at": "2026-09-30T21:31:48.758Z",
+   "deadline": "2026-10-03T21:31:48.758Z",
+   "rule_version": "v1",
+   "shadow": true,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "failed",
+   "reason": "no play_started inside the window",
+   "signal_event_id": null,
+   "signal_at": null,
+   "exposed_to_agent": false
+  }
+ ],
+ "learned": [
+  "goal G07 failed (no exposure to learn from)"
+ ]
+}

@@ -1,0 +1,94 @@
+{
+ "viewer_id": "U-02061",
+ "arm": "agent",
+ "facts": {
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "as_of": "2026-10-01T14:42:12.221Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting",
+   "as_of": "2026-10-01T14:42:12.221Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 38.7
+  },
+  "push_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 38.7
+  },
+  "whatsapp_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 38.7
+  },
+  "signup_at": {
+   "value": "2026-04-01T23:00:48.902Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 38.7
+  }
+ },
+ "conflicts": [],
+ "goal": {
+  "id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T14:42:12.221Z",
+  "deadline": "2026-10-04T14:42:12.221Z",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "rule_version": "v1",
+  "context": {
+   "series_slug": "bagugu-gigupi-d1"
+  },
+  "status": "open",
+  "shadow": false,
+  "evidence": [
+   "event:7b18382b-b530-4d78-9721-5e168deee816",
+   "episodes:bagugu-gigupi-d1"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-1958"
+ ],
+ "actions": [
+  "A-0958",
+  "A-0959"
+ ],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-02061",
+   "arm": "agent",
+   "goal_id": "G07",
+   "started_at": "2026-10-01T14:42:12.221Z",
+   "deadline": "2026-10-04T14:42:12.221Z",
+   "rule_version": "v1",
+   "shadow": false,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "failed",
+   "reason": "no play_started inside the window",
+   "signal_event_id": null,
+   "signal_at": null,
+   "exposed_to_agent": true
+  }
+ ],
+ "learned": [
+  "goal G07 failed even though a personalised page/message reached the viewer"
+ ]
+}

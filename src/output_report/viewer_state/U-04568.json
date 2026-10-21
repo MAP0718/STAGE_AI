@@ -1,0 +1,90 @@
+{
+ "viewer_id": "U-04568",
+ "arm": "holdout",
+ "facts": {
+  "dialect": {
+   "value": "d3",
+   "source": "app_setting",
+   "as_of": "2026-10-01T16:11:11.365Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting",
+   "as_of": "2026-10-01T16:11:11.365Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "never",
+   "source": "derived:signup_event",
+   "as_of": "2026-10-01T16:10:47.697Z",
+   "age_hours": 0.0
+  },
+  "push_consent": {
+   "value": false,
+   "source": "no_profile_row",
+   "as_of": null,
+   "age_hours": null
+  },
+  "whatsapp_consent": {
+   "value": false,
+   "source": "no_profile_row",
+   "as_of": null,
+   "age_hours": null
+  },
+  "signup_at": {
+   "value": "2026-10-01T16:10:47.697Z",
+   "source": "event:signup_completed",
+   "as_of": "2026-10-01T16:10:47.697Z",
+   "age_hours": 0.0
+  }
+ },
+ "conflicts": [],
+ "goal": {
+  "id": "G01",
+  "name": "first_play_24h",
+  "started_at": "2026-10-01T16:11:11.365Z",
+  "deadline": "2026-10-02T16:11:11.365Z",
+  "success": {
+   "event": "play_started",
+   "condition": "any title",
+   "window_hours": 24
+  },
+  "rule_version": "v1",
+  "context": {},
+  "status": "open",
+  "shadow": true,
+  "evidence": [
+   "signup:2026-10-01T16:10:47.697Z",
+   "no play_started in history"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-2407",
+  "D-2408"
+ ],
+ "actions": [],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-04568",
+   "arm": "holdout",
+   "goal_id": "G01",
+   "started_at": "2026-10-01T16:11:11.365Z",
+   "deadline": "2026-10-02T16:11:11.365Z",
+   "rule_version": "v1",
+   "shadow": true,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "succeeded",
+   "reason": "play_started seen inside the window",
+   "signal_event_id": "oua-029084",
+   "signal_at": "2026-10-01T16:15:12.365Z",
+   "exposed_to_agent": false
+  }
+ ],
+ "learned": [
+  "goal G01 succeeded"
+ ]
+}

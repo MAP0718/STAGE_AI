@@ -1,0 +1,24 @@
+{
+  "decisions": 2769,
+  "decisions_timed": 2679,
+  "p50_ms": 0,
+  "p95_ms": 2,
+  "p99_ms": 3,
+  "max_ms": 3001,
+  "budget_ms": 60000,
+  "decisions_over_60s": 0,
+  "decisions_over_5min": 0,
+  "decisions_with_fallback": 21,
+  "fallbacks": {
+    "unsupported_model_claim": 1,
+    "model_unavailable (HTTP 503)": 17,
+    "model_timeout": 1,
+    "model_malformed_output": 1,
+    "data_store_timeout": 1
+  },
+  "busiest_minute_triggers": 79,
+  "busiest_10_minutes_triggers": 240,
+  "max_model_calls_in_a_decision": 1,
+  "max_tool_calls_in_a_decision": 3,
+  "note": "Real processing time on this machine plus simulated waiting for timeouts (the mock does not sleep). published_at = deliver_at + decided_in_ms."
+}

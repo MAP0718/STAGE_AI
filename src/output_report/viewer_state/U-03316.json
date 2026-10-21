@@ -1,0 +1,91 @@
+{
+ "viewer_id": "U-03316",
+ "arm": "holdout",
+ "facts": {
+  "dialect": {
+   "value": "",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 26.2
+  },
+  "language": {
+   "value": "hin",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 26.2
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 26.2
+  },
+  "push_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 26.2
+  },
+  "whatsapp_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 26.2
+  },
+  "signup_at": {
+   "value": "2026-01-23T17:51:09.138Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 26.2
+  }
+ },
+ "conflicts": [],
+ "goal": {
+  "id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T02:09:26.480Z",
+  "deadline": "2026-10-04T02:09:26.480Z",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "rule_version": "v1",
+  "context": {
+   "series_slug": "dichupi-niha-d2"
+  },
+  "status": "open",
+  "shadow": true,
+  "evidence": [
+   "event:daf300a5-7677-4f42-8221-8eb46ffb0afb",
+   "episodes:dichupi-niha-d2"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-0147"
+ ],
+ "actions": [],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-03316",
+   "arm": "holdout",
+   "goal_id": "G07",
+   "started_at": "2026-10-01T02:09:26.480Z",
+   "deadline": "2026-10-04T02:09:26.480Z",
+   "rule_version": "v1",
+   "shadow": true,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "failed",
+   "reason": "no play_started inside the window",
+   "signal_event_id": null,
+   "signal_at": null,
+   "exposed_to_agent": false
+  }
+ ],
+ "learned": [
+  "goal G07 failed (no exposure to learn from)"
+ ]
+}

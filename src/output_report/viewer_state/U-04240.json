@@ -1,0 +1,94 @@
+{
+ "viewer_id": "U-04240",
+ "arm": "holdout",
+ "facts": {
+  "dialect": {
+   "value": "d6",
+   "source": "app_setting",
+   "as_of": "2026-10-01T14:04:06.439Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting",
+   "as_of": "2026-10-01T14:04:06.439Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "lapsed",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 38.1
+  },
+  "push_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 38.1
+  },
+  "whatsapp_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 38.1
+  },
+  "signup_at": {
+   "value": "2025-03-03T20:09:52.878Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 38.1
+  }
+ },
+ "conflicts": [
+  "profile_dialect:d3"
+ ],
+ "goal": null,
+ "goal_history": [
+  {
+   "id": "G06",
+   "name": "reactivate_lapsed_14d",
+   "started_at": "2026-10-01T14:04:06.439Z",
+   "deadline": "2026-10-15T14:04:06.439Z",
+   "success": {
+    "event": "purchase_completed",
+    "condition": "any paid plan",
+    "window_hours": 336
+   },
+   "rule_version": "v1",
+   "context": {},
+   "status": "closed_by_purchase",
+   "shadow": true,
+   "evidence": [
+    "subscription:profile"
+   ],
+   "closed_at": "2026-10-01T14:06:23.361Z"
+  }
+ ],
+ "decisions": [
+  "D-1819"
+ ],
+ "actions": [],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-04240",
+   "arm": "holdout",
+   "goal_id": "G06",
+   "started_at": "2026-10-01T14:04:06.439Z",
+   "deadline": "2026-10-15T14:04:06.439Z",
+   "rule_version": "v1",
+   "shadow": true,
+   "primary": true,
+   "goal_status_at_replay_end": "closed_by_purchase",
+   "result": "succeeded",
+   "reason": "purchase_completed seen inside the window",
+   "signal_event_id": "68ce6ea8-0d8a-4b9d-a52f-72858a21adf8",
+   "signal_at": "2026-10-01T14:06:23.361Z",
+   "exposed_to_agent": false
+  }
+ ],
+ "learned": [
+  "purchase at 2026-10-01T14:06:23.361Z closed goal G06; 0 pending message(s) cancelled; will re-plan",
+  "goal G06 succeeded"
+ ]
+}

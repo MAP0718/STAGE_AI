@@ -1,0 +1,91 @@
+{
+ "viewer_id": "U-03692",
+ "arm": "agent",
+ "facts": {
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "as_of": "2026-10-01T14:56:17.080Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting",
+   "as_of": "2026-10-01T14:56:17.080Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "never",
+   "source": "derived:signup_event",
+   "as_of": "2026-09-30T01:12:53.337Z",
+   "age_hours": 37.7
+  },
+  "push_consent": {
+   "value": false,
+   "source": "no_profile_row",
+   "as_of": null,
+   "age_hours": null
+  },
+  "whatsapp_consent": {
+   "value": false,
+   "source": "no_profile_row",
+   "as_of": null,
+   "age_hours": null
+  },
+  "signup_at": {
+   "value": "2026-09-30T01:12:53.337Z",
+   "source": "event:signup_completed",
+   "as_of": "2026-09-30T01:12:53.337Z",
+   "age_hours": 37.7
+  }
+ },
+ "conflicts": [
+  "campaign_link_dialect:d3"
+ ],
+ "goal": {
+  "id": "G03",
+  "name": "second_day_return_2d",
+  "started_at": "2026-10-01T14:56:17.080Z",
+  "deadline": "2026-10-03T14:56:17.080Z",
+  "success": {
+   "event": "play_started",
+   "condition": "on a later IST calendar day within the window"
+  },
+  "rule_version": "v2-corrected",
+  "context": {},
+  "status": "open",
+  "shadow": false,
+  "evidence": [
+   "signup:2026-09-30T01:12:53.337Z"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-2001"
+ ],
+ "actions": [
+  "A-0997"
+ ],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-03692",
+   "arm": "agent",
+   "goal_id": "G03",
+   "started_at": "2026-10-01T14:56:17.080Z",
+   "deadline": "2026-10-03T14:56:17.080Z",
+   "rule_version": "v2-corrected",
+   "shadow": false,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "failed",
+   "reason": "no play_started inside the window",
+   "signal_event_id": null,
+   "signal_at": null,
+   "exposed_to_agent": true
+  }
+ ],
+ "learned": [
+  "goal G03 failed even though a personalised page/message reached the viewer"
+ ]
+}

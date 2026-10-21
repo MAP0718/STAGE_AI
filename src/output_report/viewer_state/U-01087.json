@@ -1,0 +1,91 @@
+{
+ "viewer_id": "U-01087",
+ "arm": "holdout",
+ "facts": {
+  "dialect": {
+   "value": "d5",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 34.2
+  },
+  "language": {
+   "value": "en",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 34.2
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 34.2
+  },
+  "push_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 34.2
+  },
+  "whatsapp_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 34.2
+  },
+  "signup_at": {
+   "value": "2026-04-27T17:07:44.253Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 34.2
+  }
+ },
+ "conflicts": [],
+ "goal": {
+  "id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T10:09:22.970Z",
+  "deadline": "2026-10-04T10:09:22.970Z",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "rule_version": "v1",
+  "context": {
+   "series_slug": "bhaja-moguba-d2"
+  },
+  "status": "open",
+  "shadow": true,
+  "evidence": [
+   "event:6e0d0343-5e07-475f-86d3-0de8b46f6588",
+   "episodes:bhaja-moguba-d2"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-1272"
+ ],
+ "actions": [],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-01087",
+   "arm": "holdout",
+   "goal_id": "G07",
+   "started_at": "2026-10-01T10:09:22.970Z",
+   "deadline": "2026-10-04T10:09:22.970Z",
+   "rule_version": "v1",
+   "shadow": true,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "succeeded",
+   "reason": "play_started seen inside the window",
+   "signal_event_id": "b962c9a8-eca0-4c70-b8b8-e93f10cc3bb3",
+   "signal_at": "2026-10-01T10:58:31.763Z",
+   "exposed_to_agent": false
+  }
+ ],
+ "learned": [
+  "goal G07 succeeded"
+ ]
+}

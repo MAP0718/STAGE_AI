@@ -1,0 +1,94 @@
+{
+ "viewer_id": "U-00680",
+ "arm": "holdout",
+ "facts": {
+  "dialect": {
+   "value": "NA",
+   "source": "app_setting",
+   "as_of": "2026-10-01T13:06:18.279Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting",
+   "as_of": "2026-10-01T13:06:18.279Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 37.1
+  },
+  "push_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 37.1
+  },
+  "whatsapp_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 37.1
+  },
+  "signup_at": {
+   "value": "2025-03-06T16:26:08.380Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 37.1
+  }
+ },
+ "conflicts": [
+  "profile_dialect:d3"
+ ],
+ "goal": {
+  "id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T13:06:18.279Z",
+  "deadline": "2026-10-04T13:06:18.279Z",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "rule_version": "v1",
+  "context": {
+   "series_slug": "hate-d1"
+  },
+  "status": "open",
+  "shadow": true,
+  "evidence": [
+   "event:7fc8f8dd-ab31-4cbb-9091-4097913fdcdc",
+   "episodes:hate-d1"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-0366",
+  "D-1645"
+ ],
+ "actions": [],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-00680",
+   "arm": "holdout",
+   "goal_id": "G07",
+   "started_at": "2026-10-01T13:06:18.279Z",
+   "deadline": "2026-10-04T13:06:18.279Z",
+   "rule_version": "v1",
+   "shadow": true,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "failed",
+   "reason": "no play_started inside the window",
+   "signal_event_id": null,
+   "signal_at": null,
+   "exposed_to_agent": false
+  }
+ ],
+ "learned": [
+  "goal G07 failed (no exposure to learn from)"
+ ]
+}

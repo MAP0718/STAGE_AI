@@ -1,0 +1,96 @@
+{
+ "viewer_id": "U-02194",
+ "arm": "holdout",
+ "facts": {
+  "dialect": {
+   "value": "d2",
+   "source": "app_setting",
+   "as_of": "2026-10-01T13:35:34.701Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting",
+   "as_of": "2026-10-01T13:35:34.701Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 37.6
+  },
+  "push_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 37.6
+  },
+  "whatsapp_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 37.6
+  },
+  "signup_at": {
+   "value": "2026-02-06T23:52:10.250Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 37.6
+  }
+ },
+ "conflicts": [
+  "campaign_link_dialect:d6"
+ ],
+ "goal": {
+  "id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T06:56:30.808Z",
+  "deadline": "2026-10-04T06:56:30.808Z",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "rule_version": "v1",
+  "context": {
+   "series_slug": "rigu-dhadi-d2"
+  },
+  "status": "open",
+  "shadow": true,
+  "evidence": [
+   "event:ff22dfc6-bd10-401b-89ad-31f2e214480b",
+   "episodes:rigu-dhadi-d2"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-0846",
+  "D-0847",
+  "D-1409",
+  "D-1719"
+ ],
+ "actions": [],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-02194",
+   "arm": "holdout",
+   "goal_id": "G07",
+   "started_at": "2026-10-01T06:56:30.808Z",
+   "deadline": "2026-10-04T06:56:30.808Z",
+   "rule_version": "v1",
+   "shadow": true,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "failed",
+   "reason": "no play_started inside the window",
+   "signal_event_id": null,
+   "signal_at": null,
+   "exposed_to_agent": false
+  }
+ ],
+ "learned": [
+  "goal G07 failed (no exposure to learn from)"
+ ]
+}

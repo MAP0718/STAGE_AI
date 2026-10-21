@@ -1,0 +1,129 @@
+{
+ "viewer_id": "U-03954",
+ "arm": "holdout",
+ "facts": {
+  "dialect": {
+   "value": "d5",
+   "source": "app_setting",
+   "as_of": "2026-10-01T11:38:38.885Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting",
+   "as_of": "2026-10-01T11:38:38.885Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 35.6
+  },
+  "push_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 35.6
+  },
+  "whatsapp_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 35.6
+  },
+  "signup_at": {
+   "value": "2026-05-17T15:49:39.541Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 35.6
+  }
+ },
+ "conflicts": [],
+ "goal": {
+  "id": "G08",
+  "name": "try_new_release_7d",
+  "started_at": "2026-10-01T11:38:38.885Z",
+  "deadline": "2026-10-08T11:38:38.885Z",
+  "success": {
+   "event": "play_started",
+   "condition": "a title released in the 30 days before the goal start",
+   "window_hours": 168
+  },
+  "rule_version": "v1",
+  "context": {},
+  "status": "open",
+  "shadow": true,
+  "evidence": [
+   "subscription:profile"
+  ]
+ },
+ "goal_history": [
+  {
+   "id": "G07",
+   "name": "resume_series_3d",
+   "started_at": "2026-09-30T23:31:46.382Z",
+   "deadline": "2026-10-03T23:31:46.382Z",
+   "success": {
+    "event": "play_started",
+    "condition": "same content_slug as the unfinished series",
+    "window_hours": 72
+   },
+   "rule_version": "v1",
+   "context": {
+    "series_slug": "kova-sako-d5"
+   },
+   "status": "no_longer_eligible",
+   "shadow": true,
+   "evidence": [
+    "event:083bcf98-83ec-4c89-8e47-1192d97c9647",
+    "episodes:kova-sako-d5"
+   ]
+  }
+ ],
+ "decisions": [
+  "D-0064",
+  "D-1445"
+ ],
+ "actions": [],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-03954",
+   "arm": "holdout",
+   "goal_id": "G07",
+   "started_at": "2026-09-30T23:31:46.382Z",
+   "deadline": "2026-10-03T23:31:46.382Z",
+   "rule_version": "v1",
+   "shadow": true,
+   "primary": true,
+   "goal_status_at_replay_end": "no_longer_eligible",
+   "result": "succeeded",
+   "reason": "play_started seen inside the window",
+   "signal_event_id": "9aee2472-ef0c-4deb-b9e2-9492bf7c26fb",
+   "signal_at": "2026-10-01T04:29:46.080Z",
+   "exposed_to_agent": false
+  },
+  {
+   "viewer_id": "U-03954",
+   "arm": "holdout",
+   "goal_id": "G08",
+   "started_at": "2026-10-01T11:38:38.885Z",
+   "deadline": "2026-10-08T11:38:38.885Z",
+   "rule_version": "v1",
+   "shadow": true,
+   "primary": false,
+   "goal_status_at_replay_end": "open",
+   "result": "failed",
+   "reason": "no play_started inside the window",
+   "signal_event_id": null,
+   "signal_at": null,
+   "exposed_to_agent": false
+  }
+ ],
+ "learned": [
+  "goal G07 retired: no_longer_eligible",
+  "goal G07 succeeded",
+  "goal G08 failed (no exposure to learn from)"
+ ]
+}

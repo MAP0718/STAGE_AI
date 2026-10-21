@@ -1,0 +1,96 @@
+{
+ "viewer_id": "U-03796",
+ "arm": "agent",
+ "facts": {
+  "dialect": {
+   "value": "d2",
+   "source": "app_setting",
+   "as_of": "2026-10-01T11:09:56.920Z",
+   "age_hours": 0.0
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting",
+   "as_of": "2026-10-01T11:09:56.920Z",
+   "age_hours": 0.0
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 35.2
+  },
+  "push_consent": {
+   "value": true,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 35.2
+  },
+  "whatsapp_consent": {
+   "value": false,
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 35.2
+  },
+  "signup_at": {
+   "value": "2026-04-22T09:19:05.632Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_hours": 35.2
+  }
+ },
+ "conflicts": [],
+ "goal": {
+  "id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T04:47:55.086Z",
+  "deadline": "2026-10-04T04:47:55.086Z",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "rule_version": "v1",
+  "context": {
+   "series_slug": "lola-rodira-d2"
+  },
+  "status": "open",
+  "shadow": false,
+  "evidence": [
+   "event:263d66b2-a9fd-409a-9060-65afb4046d4e",
+   "episodes:lola-rodira-d2"
+  ]
+ },
+ "goal_history": [],
+ "decisions": [
+  "D-0580",
+  "D-1394"
+ ],
+ "actions": [
+  "A-0200",
+  "A-0201",
+  "A-0653"
+ ],
+ "cancelled_actions": [],
+ "outcomes": [
+  {
+   "viewer_id": "U-03796",
+   "arm": "agent",
+   "goal_id": "G07",
+   "started_at": "2026-10-01T04:47:55.086Z",
+   "deadline": "2026-10-04T04:47:55.086Z",
+   "rule_version": "v1",
+   "shadow": false,
+   "primary": true,
+   "goal_status_at_replay_end": "open",
+   "result": "failed",
+   "reason": "no play_started inside the window",
+   "signal_event_id": null,
+   "signal_at": null,
+   "exposed_to_agent": true
+  }
+ ],
+ "learned": [
+  "goal G07 failed even though a personalised page/message reached the viewer"
+ ]
+}
